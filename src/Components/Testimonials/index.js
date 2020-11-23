@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Overall from ".//TestimonialsComponents/Overall/index";
 import TestimonialImg1 from "../../Assets/vanek.jpg";
 import TestimonialImg2 from "../../Assets/mauri.png";
 import TestimonialImg3 from "../../Assets/corallo.png";
@@ -19,37 +20,28 @@ const Testimonials = () => {
   const [count, setCount] = useState(0);
   return (
     <section className="testimonials">
-      <Testimonial
-        content={content[count]}
-        company={company[count]}
-        img={img[count]}
-      />
-      <ul className="testimonials__list">
-        <li>
-          <button
-            className={`testimonials__list__button${
-              count === 0 ? "--active" : ""
-            }`}
-            onClick={() => setCount(0)}
-          ></button>
-        </li>
-        <li>
-          <button
-            className={`testimonials__list__button${
-              count === 1 ? "--active" : ""
-            }`}
-            onClick={() => setCount(1)}
-          ></button>
-        </li>
-        <li>
-          <button
-            className={`testimonials__list__button${
-              count === 2 ? "--active" : ""
-            }`}
-            onClick={() => setCount(2)}
-          ></button>
-        </li>
-      </ul>
+      <div className="testimonials__main">
+        <Testimonial
+          content={content[count]}
+          company={company[count]}
+          img={img[count]}
+        />
+        <ul className="testimonials__list">
+          {Array.from([0, 1, 2], (i) => {
+            return (
+              <li>
+                <button
+                  className={`testimonials__list__button${
+                    count === i ? "--active" : ""
+                  }`}
+                  onClick={() => setCount(i)}
+                ></button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <Overall />
     </section>
   );
 };
