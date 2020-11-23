@@ -4,14 +4,14 @@ const Offer3 = () => {
   return (
     <div className="offer">
       <img className="offer__img" src={Offer} />
-      <h3 className="offer__header">Profesjonalne tłumaczenie</h3>
+      <h3 className="offer__header">Narzędzia dla programistów</h3>
       <p className="offer__content">
-        Łatwy i szybki sposób profesjonalnego tłumaczenia dokumentów,
-        instrukcji, witryn internetowych, oprogramowania i innych materiałów,
-        zgodnie z Twoim harmonogramem i wymaganiami, na 183 języków i w 40
-        obszarach specjalizacji.
+        Najbardziej zaawansowane, a jednocześnie proste w obsłudze interfejsy
+        API tłumaczeń do ciągłej lokalizacji, wyodrębniania treści z 71 formatów
+        plików, adaptacyjne tłumaczenie maszynowe wykorzystujące sieci neuronowe
+        i o wiele więcej.
       </p>
-      <a className="offer__link">Natychmiastowa wycena</a>
+      <a className="offer__link">Dowiedz się więcej</a>
     </div>
   );
 };

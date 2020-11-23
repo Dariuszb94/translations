@@ -4,14 +4,13 @@ const Offer2 = () => {
   return (
     <div className="offer">
       <img className="offer__img" src={Offer} />
-      <h3 className="offer__header">Profesjonalne tłumaczenie</h3>
+      <h3 className="offer__header">Rozwiązania dla przedsiębiorstw</h3>
       <p className="offer__content">
-        Łatwy i szybki sposób profesjonalnego tłumaczenia dokumentów,
-        instrukcji, witryn internetowych, oprogramowania i innych materiałów,
-        zgodnie z Twoim harmonogramem i wymaganiami, na 183 języków i w 40
-        obszarach specjalizacji.
+        Od zaawansowanych, adaptowalnych rozwiązań lokalizacji po obszerne,
+        zautomatyzowane usługi tłumaczenia transakcji: oferujemy szeroki zakres
+        w pełni zarządzanych usług tłumaczeniowych.
       </p>
-      <a className="offer__link">Natychmiastowa wycena</a>
+      <a className="offer__link">Dowiedz się więcej</a>
     </div>
   );
 };
