@@ -149,6 +149,7 @@ padding:0 16px;
   flex-wrap: wrap;
   justify-content: space-between;
   padding:0 16px;
+  margin-bottom:80px;
 }
 .offer{
   width: 33%;
@@ -189,6 +190,7 @@ align-items: center;
   width:16px;
   border-radius:50%;
   height:16px;
+  cursor: pointer;
 
 background-color: #ccd4de;
 }
@@ -196,6 +198,7 @@ background-color: #ccd4de;
   width:16px;
   border-radius:50%;
   height:16px;
+  cursor: pointer;
   background-color:#0055b8;
 }
 .overall__header{
@@ -220,7 +223,7 @@ background-color: #ccd4de;
   position: relative; /* for child pseudo-element */
   margin: 0 -600rem;
   /* add back negative margin value */
-  padding: 0.25rem 600rem;
+  padding: 80px 600rem;
 }
 
 .testimonials__main{
