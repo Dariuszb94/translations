@@ -249,6 +249,19 @@ padding-right:32px;
 .culture__img{
   width: 100%;
 }
+/*estimation*/
+
+.estimation__header{
+  font-size: 48px;
+  line-height: 1.16;
+  font-weight: 600;
+}
+.estimation__subheader{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 600px;
+}
 @media (max-width: 1200px) {
   .culture{
     grid-template-columns: 50% 50%;

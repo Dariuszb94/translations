@@ -1,21 +1,28 @@
 import "./App.css";
 import React from "react";
-import Menu from "./Components/Menu/index";
-import Banner from "./Components/Banner/index";
-import Offers from "./Components/Offers/index";
-import Testimonial from "./Components/Testimonials/index";
-import Culture from "./Components/Culture/index";
+import Homepage from "./Components/Homepage/index";
+import Estimation from "./Components/Estimation/index";
+import Menu from "./Components/Homepage/Menu/index";
 
-function App() {
+import { Route, Switch } from "react-router-dom";
+import PropTypes from "prop-types";
+function App({ location }) {
   return (
     <div className="App">
+             
       <Menu />
-      <Banner />
-      <Offers />
-      <Testimonial />
-      <Culture />
+      <Switch location={location}>
+                  
+        <Route exact path="/home" component={Homepage} />
+                  
+        <Route path="/estimation" component={Estimation} />
+                           
+        <Route component={Homepage} />
+      </Switch>
     </div>
   );
 }
-
+App.propTypes = {
+  location: PropTypes.object,
+};
 export default App;

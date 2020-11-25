@@ -1,6 +1,6 @@
 import React from "react";
 import Overall from "./CultureComponents/Overall/index";
-import CultureImg from "../../Assets/giardiniere-translated.png";
+import CultureImg from "../../../Assets/giardiniere-translated.png";
 const Culture = () => {
   return (
     <section className="culture">
