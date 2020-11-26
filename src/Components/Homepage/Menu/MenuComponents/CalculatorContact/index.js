@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const CalculatorContact = () => {
   return (
     <ul className="calculatorContact">
@@ -7,7 +7,13 @@ const CalculatorContact = () => {
         <a className="calculatorContact__contact">Kontakt</a>
       </li>
       <li>
-        <a className="calculatorContact__calculator">Natychmiastowa wycena</a>
+        <NavLink
+          to="/estimation"
+          activeClassName="active"
+          className="calculatorContact__calculator"
+        >
+          Natychmiastowa wycena
+        </NavLink>
       </li>
     </ul>
   );

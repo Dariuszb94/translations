@@ -1,4 +1,6 @@
 import React from "react";
+import From from "./EstimationComponents/From/index";
+import To from "./EstimationComponents/To/index";
 
 const Estimation = () => {
   return (
@@ -10,6 +12,11 @@ const Estimation = () => {
         229 743 profesjonalnych tłumaczy i 190 073 klientów korzysta z
         inteligentnego sposobu tłumaczeń od 1999 roku.
       </h2>
+      <div className="estimation-main">
+        <From />
+        <To />
+        <div>adasda</div>
+      </div>
     </section>
   );
 };

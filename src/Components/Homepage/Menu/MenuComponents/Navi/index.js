@@ -1,5 +1,4 @@
 import React from "react";
-
 const Navi = () => {
   return (
     <ul className="navi">
