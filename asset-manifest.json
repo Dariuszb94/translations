@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.9fa192e5.chunk.css",
-    "main.js": "/translations/static/js/main.ec88614d.chunk.js",
-    "main.js.map": "/translations/static/js/main.ec88614d.chunk.js.map",
+    "main.css": "/translations/static/css/main.dd362d0c.chunk.css",
+    "main.js": "/translations/static/js/main.028bd18f.chunk.js",
+    "main.js.map": "/translations/static/js/main.028bd18f.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
     "runtime-main.js.map": "/translations/static/js/runtime-main.35137d21.js.map",
-    "static/js/2.569a802b.chunk.js": "/translations/static/js/2.569a802b.chunk.js",
-    "static/js/2.569a802b.chunk.js.map": "/translations/static/js/2.569a802b.chunk.js.map",
+    "static/js/2.5382c3f9.chunk.js": "/translations/static/js/2.5382c3f9.chunk.js",
+    "static/js/2.5382c3f9.chunk.js.map": "/translations/static/js/2.5382c3f9.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.9fa192e5.chunk.css.map": "/translations/static/css/main.9fa192e5.chunk.css.map",
-    "static/js/2.569a802b.chunk.js.LICENSE.txt": "/translations/static/js/2.569a802b.chunk.js.LICENSE.txt",
+    "static/css/main.dd362d0c.chunk.css.map": "/translations/static/css/main.dd362d0c.chunk.css.map",
+    "static/js/2.5382c3f9.chunk.js.LICENSE.txt": "/translations/static/js/2.5382c3f9.chunk.js.LICENSE.txt",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
     "static/media/corallo.09152400.png": "/translations/static/media/corallo.09152400.png",
     "static/media/developers_tools.51e5fe1c.png": "/translations/static/media/developers_tools.51e5fe1c.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
-    "static/js/2.569a802b.chunk.js",
-    "static/css/main.9fa192e5.chunk.css",
-    "static/js/main.ec88614d.chunk.js"
+    "static/js/2.5382c3f9.chunk.js",
+    "static/css/main.dd362d0c.chunk.css",
+    "static/js/main.028bd18f.chunk.js"
   ]
 }
