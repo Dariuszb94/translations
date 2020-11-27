@@ -277,6 +277,10 @@ max-width:1120px;
 .from__list--shown{
   display: initial;
   position: absolute;
+  max-height: 266px;
+  overflow-y: auto;
+  box-shadow: 0 0 0 1px #abb3bd, 0 4px 8px rgba(0,0,0,.16);
+  background-color:white;
 }
 .from__list--hidden{
   display: none;
@@ -285,6 +289,20 @@ max-width:1120px;
 }
 .from {
   position: relative;
+}
+.from__list__element{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
+  padding: 3px 8px 5px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: #000;
+
+  line-height: 24px;
+  border-radius: 2px;
+  background-color: transparent;
 }
 @media (max-width: 1200px) {
   .culture{
