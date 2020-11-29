@@ -1,8 +1,12 @@
 import React from "react";
 import From from "./EstimationComponents/From/index";
 import To from "./EstimationComponents/To/index";
+import Characters from "./EstimationComponents/Characters/index";
 
 const Estimation = () => {
+  const chars = (chars) => {
+    console.log(chars);
+  };
   return (
     <section className="estimation">
       <h1 className="estimation__header">
@@ -15,7 +19,8 @@ const Estimation = () => {
       <div className="estimation-main">
         <From />
         <To />
-        <div>adasda</div>
+        <Characters charsCallback={chars} />
+        <button className="estimation__button">Pokaż ceny</button>
       </div>
     </section>
   );
