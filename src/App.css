@@ -277,7 +277,11 @@ max-width:1120px;
 .from__list--shown{
   display: initial;
   position: absolute;
-  max-height: 266px;
+  top: 56px;
+  padding: 8px;
+  max-height: 266px;    
+  width: calc(100% - 15px);
+  border-radius: 2px;
   overflow-y: auto;
   box-shadow: 0 0 0 1px #abb3bd, 0 4px 8px rgba(0,0,0,.16);
   background-color:white;
@@ -292,17 +296,68 @@ max-width:1120px;
 }
 .from__list__element{
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
-  margin-right: 8px;
   padding: 3px 8px 5px;
   margin-bottom: 1px;
   font-size: 14px;
-  color: #000;
+ 
 
+  color: #000;
   line-height: 24px;
   border-radius: 2px;
   background-color: transparent;
+}
+.from__list__element--active{
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  justify-content: space-between;
+  padding: 3px 8px 5px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+  border-radius: 2px;
+  background-color: #002b5c;
+}
+.from__language{
+  width:280px;
+  display: flex;
+  cursor: pointer;
+    justify-content: space-between;
+    padding: 11px 16px 13px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 2px;
+    border-width: 0;
+    transition: box-shadow .15s ease-in-out;
+    box-shadow: 0 0 0 1px #abb3bd, 0 1px 2px rgba(0,0,0,.16);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.from__language--active{
+  display: flex;
+  cursor: pointer;
+    justify-content: space-between;
+  width:280px;
+    padding: 11px 16px 13px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 2px;
+    border-width: 0;
+    transition: box-shadow .15s ease-in-out;
+    box-shadow: 0 0 0 1px #abb3bd, 0 1px 2px rgba(0,0,0,.16);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  box-shadow: 0 0 0 2px #0055b8, 0 1px 2px rgba(0,0,0,.16);
+
 }
 @media (max-width: 1200px) {
   .culture{
