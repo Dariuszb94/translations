@@ -2,6 +2,7 @@ import React from "react";
 import From from "./EstimationComponents/From/index";
 import To from "./EstimationComponents/To/index";
 import Characters from "./EstimationComponents/Characters/index";
+import Solutions from "./EstimationComponents/Solutions/index";
 
 const Estimation = () => {
   const chars = (chars) => {
@@ -22,6 +23,7 @@ const Estimation = () => {
         <Characters charsCallback={chars} />
         <button className="estimation__button">Pokaż ceny</button>
       </div>
+      <Solutions />
     </section>
   );
 };
