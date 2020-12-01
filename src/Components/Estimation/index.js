@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import From from "./EstimationComponents/From/index";
 import To from "./EstimationComponents/To/index";
 import Characters from "./EstimationComponents/Characters/index";
 import Solutions from "./EstimationComponents/Solutions/index";
 
 const Estimation = () => {
+  const [numberOfChars, changeChars] = useState(3);
   const chars = (chars) => {
-    console.log(chars);
+    changeChars(chars);
   };
   return (
     <section className="estimation">
@@ -23,7 +24,7 @@ const Estimation = () => {
         <Characters charsCallback={chars} />
         <button className="estimation__button">Pokaż ceny</button>
       </div>
-      <Solutions />
+      <Solutions numberOfChars={numberOfChars} />
     </section>
   );
 };

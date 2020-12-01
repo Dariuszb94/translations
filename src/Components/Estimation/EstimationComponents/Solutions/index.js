@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import HighQualityIcon from "@material-ui/icons/HighQuality";
-const Solutions = () => {
+import FlashOnIcon from "@material-ui/icons/FlashOn";
+import PropTypes from "prop-types";
+
+const Solutions = ({ numberOfChars }) => {
   return (
     <div className="solutions">
       <h2>Wybierz dla siebie</h2>
@@ -9,20 +12,22 @@ const Solutions = () => {
         <li className="solution">
           <h4 className="solution__header">Premium</h4>
           <div className="solution__icons">
-            <div>
+            <div className="solution__icons__icon">
               <PermIdentityIcon />
               Tłumacz
             </div>
-            <div>
+            <div className="solution__icons__icon">
               <HighQualityIcon />
               Wyspecjalizowany weryfikator
             </div>
           </div>
-          <div className="solution__price">zł639,75</div>
+          <div className="solution__price">
+            {(numberOfChars * 0.5 + 32).toFixed(2)} zł
+          </div>
           <button className="solution__order">Zamówienie</button>
         </li>
         <li className="solution">
-          <h4 className="solution__header">Premium</h4>
+          <h4 className="solution__header">Profesjonalne</h4>
           <div className="solution__icons">
             <div className="solution__icons__icon">
               <PermIdentityIcon />
@@ -33,22 +38,26 @@ const Solutions = () => {
               Wyspecjalizowany weryfikator
             </div>
           </div>
-          <div className="solution__price">zł639,75</div>
+          <div className="solution__price">
+            {(numberOfChars * 0.7 + 40).toFixed(2)} zł
+          </div>
           <button className="solution__order">Zamówienie</button>
         </li>
         <li className="solution">
-          <h4 className="solution__header">Premium</h4>
+          <h4 className="solution__header">Ekonomia</h4>
           <div className="solution__icons">
-            <div>
+            <div className="solution__icons__icon">
               <PermIdentityIcon />
               Tłumacz
             </div>
-            <div>
-              <HighQualityIcon />
-              Wyspecjalizowany weryfikator
+            <div className="solution__icons__icon">
+              <FlashOnIcon />
+              Tłumaczenie maszynowe
             </div>
           </div>
-          <div className="solution__price">zł639,75</div>
+          <div className="solution__price">
+            {(numberOfChars * 0.3 + 23).toFixed(2)} zł
+          </div>
           <button className="solution__order">Zamówienie</button>
         </li>
       </ul>
@@ -56,6 +65,6 @@ const Solutions = () => {
   );
 };
 
-Solutions.propTypes = {};
+Solutions.propTypes = { numberOfChars: PropTypes.number };
 
 export default Solutions;

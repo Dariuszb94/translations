@@ -419,7 +419,7 @@ padding-right:32px;
 .solutions{
   width:1120px;
   background-color:#F2F5F7;
-
+  padding: 30px 50px 12px;
 }
 .solutions__list{
 
@@ -452,8 +452,10 @@ padding-right:32px;
   margin-left: 4px;
       font-size: 16px;
     font-weight: 400;
+    margin-bottom:8px;
 }
 .solution__order{
+  width: calc(100% - 24px);
   margin: 0;
     padding: 11px 16px 13px;
     border: none;
