@@ -3,7 +3,7 @@ import React from "react";
 import Homepage from "./Components/Homepage/index";
 import Estimation from "./Components/Estimation/index";
 import Menu from "./Components/Homepage/Menu/index";
-
+import Footer from "./Components/Footer/Footer";
 import { Route, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
 function App({ location }) {
@@ -19,6 +19,7 @@ function App({ location }) {
                            
         <Route component={Homepage} />
       </Switch>
+      <Footer />
     </div>
   );
 }

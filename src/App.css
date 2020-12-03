@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+a{
+  text-decoration: none;
+}
 body *{
   font-family: 'Roboto', sans-serif;
 }
@@ -491,6 +494,39 @@ padding-right:32px;
   font-weight: 500;
   margin:40px 0;
   cursor: pointer;
+}
+/* footer*/
+.footer-left__img{
+  width:40px;
+  height: 40px;
+  margin-right:12px;
+}
+.footer-left__text{
+  max-width: 367px;
+    padding-right: 12px;
+}
+.footer-left{
+  display: flex;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-right__link-container{
+  display: flex;
+  align-items: center;
+}
+.footer-right__link{
+margin-left:8px;
+color: #0055b8;
+font-size: 16px;
+line-height: 20px;
+color: #0055b8;
+transition: color .25s ease-in-out;
+font-weight: 500;
+}
+.footer-right__icon{
+  fill:#abb3bd !important;
 }
 @media (max-width: 1200px) {
   .culture{
