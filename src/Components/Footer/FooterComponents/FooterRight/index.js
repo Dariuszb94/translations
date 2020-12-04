@@ -16,6 +16,10 @@ const FooterRight = () => {
           info@translated.com
         </a>
       </div>
+      <div className="footer-right__text">
+        229 743 profesjonalnych tłumaczy i 190 073 klientów korzysta z
+        inteligentnego sposobu tłumaczeń od 1999 roku.
+      </div>
     </div>
   );
 };
