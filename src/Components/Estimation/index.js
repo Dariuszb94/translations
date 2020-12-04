@@ -3,6 +3,8 @@ import From from "./EstimationComponents/From/index";
 import To from "./EstimationComponents/To/index";
 import Characters from "./EstimationComponents/Characters/index";
 import Solutions from "./EstimationComponents/Solutions/index";
+import emailjs from "emailjs-com";
+import apiKeys from "../../apikeys";
 
 const Estimation = () => {
   const [numberOfChars, changeChars] = useState(3);
@@ -11,6 +13,27 @@ const Estimation = () => {
   const chars = (chars) => {
     changeChars(chars);
   };
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "default_service",
+        apiKeys.TEMPLATE_ID,
+        e.target,
+        apiKeys.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   return (
     <section className="estimation">
       <h1 className="estimation__header">
@@ -34,6 +57,16 @@ const Estimation = () => {
         </button>
       </div>
       {solutionsShown ? <Solutions numberOfChars={numberOfChars} /> : null}
+      <form className="contact-form" onSubmit={sendEmail}>
+        <input type="hidden" name="contact_number" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
     </section>
   );
 };
