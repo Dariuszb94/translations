@@ -7,9 +7,10 @@ import emailjs from "emailjs-com";
 import apiKeys from "../../../../apikeys";
 
 const Solutions = ({ numberOfChars }) => {
-  const [message, changeMessage] = useState("Sdsss");
+  const messageEco = (numberOfChars * 0.3 + 23).toFixed(2) + "zł";
+  const messagePro = (numberOfChars * 0.7 + 40).toFixed(2) + "zł";
+  const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2) + "zł";
   function sendEmail(e) {
-    console.log(e.target);
     e.preventDefault();
 
     emailjs
@@ -47,7 +48,19 @@ const Solutions = ({ numberOfChars }) => {
           <div className="solution__price">
             {(numberOfChars * 0.5 + 32).toFixed(2)} zł
           </div>
-          <button className="solution__order">Zamówienie</button>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <textarea
+              readOnly
+              name="message"
+              value={messagePremium}
+              className="mail-message"
+            />
+            <input
+              className="solution__order"
+              type="submit"
+              value="Zamówienie"
+            />
+          </form>
         </li>
         <li className="solution">
           <h4 className="solution__header">Profesjonalne</h4>
@@ -64,7 +77,19 @@ const Solutions = ({ numberOfChars }) => {
           <div className="solution__price">
             {(numberOfChars * 0.7 + 40).toFixed(2)} zł
           </div>
-          <button className="solution__order">Zamówienie</button>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <textarea
+              readOnly
+              name="message"
+              value={messagePro}
+              className="mail-message"
+            />
+            <input
+              className="solution__order"
+              type="submit"
+              value="Zamówienie"
+            />
+          </form>
         </li>
         <li className="solution">
           <h4 className="solution__header">Ekonomia</h4>
@@ -81,13 +106,21 @@ const Solutions = ({ numberOfChars }) => {
           <div className="solution__price">
             {(numberOfChars * 0.3 + 23).toFixed(2)} zł
           </div>
-          <button className="solution__order">Zamówienie</button>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <textarea
+              readOnly
+              name="message"
+              value={messageEco}
+              className="mail-message"
+            />
+            <input
+              className="solution__order"
+              type="submit"
+              value="Zamówienie"
+            />
+          </form>
         </li>
       </ul>
-      <form className="contact-form" onSubmit={sendEmail}>
-        <textarea name="message" value={message} />
-        <input type="submit" value="Send" />
-      </form>
     </div>
   );
 };
