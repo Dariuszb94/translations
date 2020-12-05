@@ -3,8 +3,31 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import HighQualityIcon from "@material-ui/icons/HighQuality";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import PropTypes from "prop-types";
+import emailjs from "emailjs-com";
+import apiKeys from "../../../../apikeys";
 
 const Solutions = ({ numberOfChars }) => {
+  const [message, changeMessage] = useState("Sdsss");
+  function sendEmail(e) {
+    console.log(e.target);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "default_service",
+        apiKeys.TEMPLATE_ID,
+        e.target,
+        apiKeys.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div className="solutions">
       <h2>Wybierz dla siebie</h2>
@@ -61,6 +84,10 @@ const Solutions = ({ numberOfChars }) => {
           <button className="solution__order">Zamówienie</button>
         </li>
       </ul>
+      <form className="contact-form" onSubmit={sendEmail}>
+        <textarea name="message" value={message} />
+        <input type="submit" value="Send" />
+      </form>
     </div>
   );
 };
