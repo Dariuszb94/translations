@@ -7,9 +7,10 @@ import emailjs from "emailjs-com";
 import apiKeys from "../../../../apikeys";
 
 const Solutions = ({ numberOfChars }) => {
-  const messageEco = (numberOfChars * 0.3 + 23).toFixed(2) + "zł";
-  const messagePro = (numberOfChars * 0.7 + 40).toFixed(2) + "zł";
-  const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2) + "zł";
+  const [mail, changeMail] = useState("");
+  const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
+  const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
+  const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
   function sendEmail(e) {
     e.preventDefault();
 
@@ -32,6 +33,12 @@ const Solutions = ({ numberOfChars }) => {
   return (
     <div className="solutions">
       <h2>Wybierz dla siebie</h2>
+      <input
+        type="text"
+        placeholder="Email"
+        value={mail}
+        onChange={(e) => changeMail(e.target.value)}
+      />
       <ul className="solutions__list">
         <li className="solution">
           <h4 className="solution__header">Premium</h4>
@@ -55,6 +62,7 @@ const Solutions = ({ numberOfChars }) => {
               value={messagePremium}
               className="mail-message"
             />
+            <input readOnly name="mail" value={mail} className="mail-message" />
             <input
               className="solution__order"
               type="submit"
@@ -84,6 +92,7 @@ const Solutions = ({ numberOfChars }) => {
               value={messagePro}
               className="mail-message"
             />
+            <input readOnly name="mail" value={mail} className="mail-message" />
             <input
               className="solution__order"
               type="submit"
@@ -113,6 +122,7 @@ const Solutions = ({ numberOfChars }) => {
               value={messageEco}
               className="mail-message"
             />
+            <input readOnly name="mail" value={mail} className="mail-message" />
             <input
               className="solution__order"
               type="submit"
