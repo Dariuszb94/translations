@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-const Characters = ({ charsCallback }) => {
+const Characters = ({ charsCallback, charsOverallCallback }) => {
   const [text, changeText] = useState("Tekst do przetłumaczenia");
   const [count, changeCount] = useState(0);
   useEffect(() => {
     changeCount(text.trim().split(/\s+/).length);
     charsCallback(text.trim().split(/\s+/).length);
+    charsOverallCallback(text);
   }, [text]);
 
   return (
@@ -20,6 +21,9 @@ const Characters = ({ charsCallback }) => {
   );
 };
 
-Characters.propTypes = { charsCallback: PropTypes.func };
+Characters.propTypes = {
+  charsCallback: PropTypes.func,
+  charsOverallCallback: PropTypes.func,
+};
 
 export default Characters;

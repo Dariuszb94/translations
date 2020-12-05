@@ -6,12 +6,15 @@ import Solutions from "./EstimationComponents/Solutions/index";
 
 const Estimation = () => {
   const [numberOfChars, changeChars] = useState(3);
+  const [text, changeCharsOverall] = useState("");
   const [solutionsShown, showSolutions] = useState(0);
 
   const chars = (chars) => {
     changeChars(chars);
   };
-
+  const charsOverall = (charsOverall) => {
+    changeCharsOverall(charsOverall);
+  };
   return (
     <section className="estimation">
       <h1 className="estimation__header">
@@ -24,7 +27,7 @@ const Estimation = () => {
       <div className="estimation-main">
         <From />
         <To />
-        <Characters charsCallback={chars} />
+        <Characters charsCallback={chars} charsOverallCallback={charsOverall} />
         <button
           className="estimation__button"
           onClick={() => {
@@ -34,7 +37,9 @@ const Estimation = () => {
           Pokaż ceny
         </button>
       </div>
-      {solutionsShown ? <Solutions numberOfChars={numberOfChars} /> : null}
+      {solutionsShown ? (
+        <Solutions numberOfChars={numberOfChars} text={text} />
+      ) : null}
     </section>
   );
 };
