@@ -483,7 +483,9 @@ padding-right:32px;
     margin-bottom:8px;
 }
 .solution__order{
+  
   pointer-events: none;
+ 
   margin: 0;
     padding: 11px 16px 13px;
     border: none;

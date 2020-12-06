@@ -15,15 +15,14 @@ const Solutions = ({ numberOfChars, text }) => {
   const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
   const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
   const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
-  function validateMail(e) {
+  function validateMail() {
     const re = /\S+@\S+\.\S+/;
     if (re.test(String(mail).toLowerCase())) {
-      if (e.length) invalidMail(0);
       changeReadyToSend(1);
     } else {
       changeReadyToSend(0);
-      if (e.length) invalidMail(1);
     }
+    console.log(readyToSend);
   }
   function sendEmail(e) {
     e.preventDefault();
@@ -37,7 +36,7 @@ const Solutions = ({ numberOfChars, text }) => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert(result.text);
         },
         (error) => {
           console.log(error.text);
@@ -51,10 +50,10 @@ const Solutions = ({ numberOfChars, text }) => {
         type="text"
         placeholder="Email"
         value={mail}
-        className={`solutions__mail-input${mailValidation ? "--invalid" : ""}`}
+        className={`solutions__mail-input${!readyToSend ? "--invalid" : ""}`}
         onChange={(e) => {
           changeMail(e.target.value);
-          validateMail(e.target.value);
+          validateMail();
         }}
       />
       <h2>Wybierz dla siebie</h2>
@@ -158,7 +157,13 @@ const Solutions = ({ numberOfChars, text }) => {
           <div className="solution__price">
             {(numberOfChars * 0.3 + 23).toFixed(2)} zł
           </div>
-          <form className="contact-form" onSubmit={sendEmail}>
+          <form
+            onMouseEnter={() => {
+              validateMail();
+            }}
+            className="contact-form"
+            onSubmit={sendEmail}
+          >
             <textarea
               readOnly
               name="message"
