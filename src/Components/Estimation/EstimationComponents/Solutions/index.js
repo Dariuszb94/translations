@@ -10,20 +10,22 @@ import { ContactSupportOutlined } from "@material-ui/icons";
 const Solutions = ({ numberOfChars, text }) => {
   const [mail, changeMail] = useState("");
   const [readyToSend, changeReadyToSend] = useState(0);
+  const [mailValidation, invalidMail] = useState(0);
 
   const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
   const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
   const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
-  function sendEmail(e) {}
   function validateMail(e) {
     const re = /\S+@\S+\.\S+/;
     if (re.test(String(mail).toLowerCase())) {
+      if (e.length) invalidMail(0);
       changeReadyToSend(1);
     } else {
       changeReadyToSend(0);
+      if (e.length) invalidMail(1);
     }
   }
-  function sendAfterValidation(e) {
+  function sendEmail(e) {
     e.preventDefault();
 
     emailjs
@@ -49,7 +51,7 @@ const Solutions = ({ numberOfChars, text }) => {
         type="text"
         placeholder="Email"
         value={mail}
-        className="solutions__mail-input"
+        className={`solutions__mail-input${mailValidation ? "--invalid" : ""}`}
         onChange={(e) => {
           changeMail(e.target.value);
           validateMail(e.target.value);
