@@ -5,13 +5,25 @@ import FlashOnIcon from "@material-ui/icons/FlashOn";
 import PropTypes from "prop-types";
 import emailjs from "emailjs-com";
 import apiKeys from "../../../../apikeys";
+import { ContactSupportOutlined } from "@material-ui/icons";
 
 const Solutions = ({ numberOfChars, text }) => {
   const [mail, changeMail] = useState("");
+  const [readyToSend, changeReadyToSend] = useState(0);
+
   const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
   const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
   const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
-  function sendEmail(e) {
+  function sendEmail(e) {}
+  function validateMail(e) {
+    const re = /\S+@\S+\.\S+/;
+    if (re.test(String(mail).toLowerCase())) {
+      changeReadyToSend(1);
+    } else {
+      changeReadyToSend(0);
+    }
+  }
+  function sendAfterValidation(e) {
     e.preventDefault();
 
     emailjs
@@ -30,10 +42,6 @@ const Solutions = ({ numberOfChars, text }) => {
         }
       );
   }
-
-  useEffect(() => {
-    console.log(text);
-  });
   return (
     <div className="solutions">
       <div className="solutions__mail-description">Wpisz swój mail</div>
@@ -42,7 +50,10 @@ const Solutions = ({ numberOfChars, text }) => {
         placeholder="Email"
         value={mail}
         className="solutions__mail-input"
-        onChange={(e) => changeMail(e.target.value)}
+        onChange={(e) => {
+          changeMail(e.target.value);
+          validateMail(e.target.value);
+        }}
       />
       <h2>Wybierz dla siebie</h2>
       <ul className="solutions__list">
@@ -82,7 +93,7 @@ const Solutions = ({ numberOfChars, text }) => {
             />
             <input readOnly name="mail" value={mail} className="mail-message" />
             <input
-              className="solution__order"
+              className={`solution__order${readyToSend ? "--active" : ""}`}
               type="submit"
               value="Zamówienie"
             />
@@ -124,7 +135,7 @@ const Solutions = ({ numberOfChars, text }) => {
             />
             <input readOnly name="mail" value={mail} className="mail-message" />
             <input
-              className="solution__order"
+              className={`solution__order${readyToSend ? "--active" : ""}`}
               type="submit"
               value="Zamówienie"
             />
@@ -166,7 +177,7 @@ const Solutions = ({ numberOfChars, text }) => {
             />
             <input readOnly name="mail" value={mail} className="mail-message" />
             <input
-              className="solution__order"
+              className={`solution__order${readyToSend ? "--active" : ""}`}
               type="submit"
               value="Zamówienie"
             />

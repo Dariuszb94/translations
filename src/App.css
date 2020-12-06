@@ -474,7 +474,30 @@ padding-right:32px;
     margin-bottom:8px;
 }
 .solution__order{
-  width: calc(100% - 24px);
+  margin: 0;
+    padding: 11px 16px 13px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    background-color: gray;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-shadow: 0 0 0 1px #0055b8;
+    transition: background-color .25s ease-in-out,box-shadow .25s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.solution__order--active{
   margin: 0;
     padding: 11px 16px 13px;
     border: none;
