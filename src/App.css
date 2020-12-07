@@ -606,4 +606,12 @@ font-weight: 500;
     grid-template-columns: 50% 50%;
 
   }
+  .estimation-main, .solutions{
+    width: 920px;
+    padding: 20px 20px 12px;
+
+  }
+  .from__language, .to__language {
+    width: 380px;
+}
 }
