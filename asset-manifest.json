@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.5f0839ca.chunk.css",
+    "main.css": "/translations/static/css/main.ad6c6d77.chunk.css",
     "main.js": "/translations/static/js/main.cd6e1297.chunk.js",
     "main.js.map": "/translations/static/js/main.cd6e1297.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
@@ -8,7 +8,7 @@
     "static/js/2.cbec9398.chunk.js": "/translations/static/js/2.cbec9398.chunk.js",
     "static/js/2.cbec9398.chunk.js.map": "/translations/static/js/2.cbec9398.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.5f0839ca.chunk.css.map": "/translations/static/css/main.5f0839ca.chunk.css.map",
+    "static/css/main.ad6c6d77.chunk.css.map": "/translations/static/css/main.ad6c6d77.chunk.css.map",
     "static/js/2.cbec9398.chunk.js.LICENSE.txt": "/translations/static/js/2.cbec9398.chunk.js.LICENSE.txt",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
     "static/media/corallo.09152400.png": "/translations/static/media/corallo.09152400.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
     "static/js/2.cbec9398.chunk.js",
-    "static/css/main.5f0839ca.chunk.css",
+    "static/css/main.ad6c6d77.chunk.css",
     "static/js/main.cd6e1297.chunk.js"
   ]
 }
