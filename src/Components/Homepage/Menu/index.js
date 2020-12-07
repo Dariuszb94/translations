@@ -9,6 +9,7 @@ const Menu = () => {
       <Logo />
       <Navi />
       <CalculatorContact />
+      <div className="overlay" />
     </section>
   );
 };

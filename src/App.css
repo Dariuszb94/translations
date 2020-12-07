@@ -57,7 +57,11 @@ padding:0 16px;
   font-size: 16px;
   font-weight: 400;
   padding: 7px 16px 9px;
+  background-color: white;
 
+}
+.calculatorContact__contact a{
+margin-bottom: 34px;
 }
 .calculatorContact__calculator{
   box-shadow: 0 0 0 1px #00479a;
@@ -602,6 +606,42 @@ font-weight: 500;
   display: none;
 }
 @media (max-width: 1200px) {
+  .navi{
+    position: fixed;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  right: calc(50% - 75px);
+  text-align: center;
+  z-index: 50;
+}
+.navi__element{
+  margin-bottom:16px;
+  color: white;
+}
+.overlay{
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+.calculatorContact{
+  z-index: 50;
+  position: fixed;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  right: calc(50% - 108px);
+  text-align: center;
+}
+.calculatorContact li{
+margin-bottom:32px;
+}
   .culture{
     grid-template-columns: 50% 50%;
 

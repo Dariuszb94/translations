@@ -25,6 +25,7 @@
     "test": "react-scripts test",
     "lint": "eslint src/**/*.js{,x}",
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
