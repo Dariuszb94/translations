@@ -1,6 +1,6 @@
 import React from "react";
-import BannerTexts from "./BannerComponents/BannerTexts/index";
-import BannerImage from "./BannerComponents/BannerImage/index";
+import BannerTexts from "./BannerComponents/BannerTexts";
+import BannerImage from "./BannerComponents/BannerImage";
 
 const Banner = () => {
   return (

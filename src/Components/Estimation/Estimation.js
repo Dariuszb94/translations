@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./index.scss";
-import From from "./EstimationComponents/From/index";
-import To from "./EstimationComponents/To/index";
-import Characters from "./EstimationComponents/Characters/index";
-import Solutions from "./EstimationComponents/Solutions/index";
+import React, { useState } from "react";
+import "./estimationStyle.scss";
+import From from "./EstimationComponents/From";
+import To from "./EstimationComponents/To";
+import Characters from "./EstimationComponents/Characters";
+import Solutions from "./EstimationComponents/Solutions";
 
 const Estimation = () => {
   const [numberOfChars, changeChars] = useState(3);

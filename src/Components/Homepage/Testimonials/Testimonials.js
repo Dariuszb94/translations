@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Overall from ".//TestimonialsComponents/Overall/index";
+import Overall from "./TestimonialsComponents/Overall";
 import TestimonialImg1 from "../../../Assets/vanek.jpg";
 import TestimonialImg2 from "../../../Assets/mauri.png";
 import TestimonialImg3 from "../../../Assets/corallo.png";
-
-import Testimonial from "./TestimonialsComponents/Testimonial/index";
+import Testimonial from "./TestimonialsComponents/Testimonial";
 const Testimonials = () => {
   const img = [TestimonialImg1, TestimonialImg2, TestimonialImg3];
   const content = [

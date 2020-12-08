@@ -1,7 +1,7 @@
 import React from "react";
-import Offer1 from "./OffersComponents/Offer1/index";
-import Offer2 from "./OffersComponents/Offer2/index";
-import Offer3 from "./OffersComponents/Offer3/index";
+import Offer1 from "./OffersComponents/Offer1";
+import Offer2 from "./OffersComponents/Offer2";
+import Offer3 from "./OffersComponents/Offer3";
 
 const Offers = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import "./index.scss";
-import Logo from "./MenuComponents/Logo/index";
-import Navi from "./MenuComponents/Navi/index";
-import CalculatorContact from "./MenuComponents/CalculatorContact/index";
+import "./menuStyle.scss";
+import Logo from "./MenuComponents/Logo";
+import Navi from "./MenuComponents/Navi";
+import CalculatorContact from "./MenuComponents/CalculatorContact";
 
 const Menu = () => {
   return (

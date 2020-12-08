@@ -1,5 +1,5 @@
 import React from "react";
-import Overall from "./CultureComponents/Overall/index";
+import Overall from "./CultureComponents/Overall";
 import CultureImg from "../../../Assets/giardiniere-translated.png";
 const Culture = () => {
   return (

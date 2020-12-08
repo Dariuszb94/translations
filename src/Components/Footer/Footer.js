@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import FooterLeft from "./FooterComponents/FooterLeft/index";
-import FooterRight from "./FooterComponents/FooterRight/index";
+import React from "react";
+import "./footerStyle.scss";
+import FooterLeft from "./FooterComponents/FooterLeft";
+import FooterRight from "./FooterComponents/FooterRight";
 
 const Footer = () => {
   return (

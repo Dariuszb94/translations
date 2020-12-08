@@ -1,5 +1,5 @@
 import React from "react";
-import Offer from "../../../../../Assets/developers_tools.png";
+import Offer from "../../../../Assets/developers_tools.png";
 const Offer3 = () => {
   return (
     <div className="offer">

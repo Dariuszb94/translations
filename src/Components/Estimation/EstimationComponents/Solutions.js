@@ -4,8 +4,7 @@ import HighQualityIcon from "@material-ui/icons/HighQuality";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import PropTypes from "prop-types";
 import emailjs from "emailjs-com";
-import apiKeys from "../../../../apikeys";
-import { ContactSupportOutlined } from "@material-ui/icons";
+import apiKeys from "../../../apikeys";
 
 const Solutions = ({ numberOfChars, text }) => {
   const [mail, changeMail] = useState("");
