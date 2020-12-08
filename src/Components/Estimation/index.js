@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./index.scss";
 import From from "./EstimationComponents/From/index";
 import To from "./EstimationComponents/To/index";
 import Characters from "./EstimationComponents/Characters/index";

@@ -1,5 +1,6 @@
 import Banner from "./Banner/index";
 import Offers from "./Offers/index";
+import "./index.scss";
 import Testimonial from "./Testimonials/index";
 import Culture from "./Culture/index";
 
