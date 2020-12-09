@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import HighQualityIcon from "@material-ui/icons/HighQuality";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
@@ -9,8 +9,6 @@ import apiKeys from "../../../apikeys";
 const Solutions = ({ numberOfChars, text }) => {
   const [mail, changeMail] = useState("");
   const [readyToSend, changeReadyToSend] = useState(0);
-  const [mailValidation, invalidMail] = useState(0);
-
   const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
   const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
   const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
