@@ -1,3 +1,29 @@
+$blue:#0055b8;
+$gray:#ccd4de;
+
+@mixin banner-texts {
+  margin: 8px 16px 8px 0;
+  padding: 15px 16px 17px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+@mixin fs16-ln24-center {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin col {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner {
   display: flex;
   margin-top: 63px;
@@ -5,8 +31,7 @@
 }
 
 .banner-texts {
-  display: flex;
-  flex-direction: column;
+  @include col;
   align-items: flex-start;
 }
 
@@ -25,24 +50,17 @@
 }
 
 .banner-texts__calculator {
-  box-shadow: 0 0 0 1px #0055b8;
-  border-radius: 4px;
-  background-color: #0055b8;
+  box-shadow: 0 0 0 1px $blue;
+  background-color: $blue;
   color: white;
-  padding: 15px 16px 17px;
-  font-size: 18px;
+  @include banner-texts;
   font-weight: 500;
-  margin: 8px 16px 8px 0;
   line-height: 24px;
 }
 
 .banner-texts__about {
-  box-shadow: 0 0 0 1px #ccd4de;
-  border-radius: 4px;
-  font-size: 18px;
+  box-shadow: 0 0 0 1px $gray;
   font-weight: 400;
-  margin: 8px 16px 8px 0;
-  padding: 15px 16px 17px;
   min-width: 176px;
   text-align: center;
 }
@@ -72,44 +90,36 @@
 }
 
 .offer__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #0055b8;
-  text-align: center;
+  @include fs16-ln24-center;
+  color: $blue;
   font-weight: 500;
   display: block;
 }
 
 .offer__content {
-  font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   margin-bottom: 10px;
-  text-align: center;
+  @include fs16-ln24-center;
   min-height: 144px;
 }
 
 .offers {
   margin-top: 111px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0 16px;
   margin-bottom: 80px;
 }
 
 .offer {
   width: 33%;
-  display: flex;
-  flex-direction: column;
+  @include col;
   align-items: center;
   max-width: 320px;
 }
 
 /*testimonials*/
 .testimonial {
-  display: flex;
-  flex-direction: column;
+  @include col;
   align-items: center;
   padding-left: 16px;
 }
@@ -133,9 +143,8 @@
 }
 
 .testimonials__list {
-  display: flex;
   width: 100px;
-  justify-content: space-between;
+  @include flex-sb;
   margin-top: 14px;
 }
 
@@ -144,15 +153,12 @@
   border-radius: 50%;
   height: 16px;
   cursor: pointer;
-  background-color: #ccd4de;
-}
+  background-color: $gray;
 
-.testimonials__list__button--active {
-  width: 16px;
-  border-radius: 50%;
-  height: 16px;
-  cursor: pointer;
-  background-color: #0055b8;
+  &--active {
+    @extend .testimonials__list__button;
+    background-color: $blue;
+  }
 }
 
 .overall__header {
@@ -189,8 +195,7 @@
   width: 55%;
   flex-shrink: 0;
   padding-right: 32px;
-  display: flex;
-  flex-direction: column;
+  @include col;
   align-items: center;
 }
 

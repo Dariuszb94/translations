@@ -11,6 +11,11 @@
   background-color: #f2f5f7;
 }
 
+@mixin smallFont {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .estimation {
   @include flex-column-center;
 }
@@ -38,7 +43,6 @@
 .to__list--shown {
   display: initial;
   position: absolute;
-  /* top: 56px; */
   padding: 8px;
   max-height: 266px;
   width: calc(100% - 15px);
@@ -88,8 +92,7 @@
   cursor: pointer;
   justify-content: space-between;
   padding: 11px 16px 13px;
-  font-size: 16px;
-  line-height: 24px;
+  @include smallFont;
   border-radius: 2px;
   border-width: 0;
   transition: box-shadow 0.15s ease-in-out;
@@ -118,8 +121,7 @@
   outline: none;
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
-  line-height: 24px;
+  @include smallFont;
   border-radius: 2px;
   border-width: 0;
   transition: box-shadow 0.15s ease-in-out;
@@ -143,9 +145,8 @@
   background-color: #0055b8;
   border-radius: 2px;
   color: #fff;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  @include smallFont;
   box-shadow: 0 0 0 1px #0055b8;
   transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   text-align: center;
@@ -210,7 +211,6 @@
 
 .solution__order {
   pointer-events: none;
-
   margin: 0;
   padding: 11px 16px 13px;
   border: none;
@@ -220,9 +220,9 @@
   background-color: gray;
   border-radius: 2px;
   color: #fff;
-  font-size: 16px;
+
   font-weight: 500;
-  line-height: 24px;
+  @include smallFont;
   box-shadow: 0 0 0 1px gray;
   transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   text-align: center;
@@ -233,33 +233,15 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
 
-.solution__order--active {
-  margin: 0;
-  cursor: pointer;
-  pointer-events: auto;
-  padding: 11px 16px 13px;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  background-color: #0055b8;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  box-shadow: 0 0 0 1px #0055b8;
-  transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  &--active {
+    @extend .solution__order;
+    cursor: pointer;
+    pointer-events: auto;
+    background-color: #0055b8;
+    box-shadow: 0 0 0 1px #0055b8;
+  }
+
 }
 
 .solution__header {
