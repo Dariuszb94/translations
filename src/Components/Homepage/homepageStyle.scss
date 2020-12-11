@@ -220,6 +220,9 @@ $gray:#ccd4de;
 
 
 @media (max-width: 1000px) {
+  .banner-texts__calculator {
+    min-width: 176px;
+  }
 
   .culture {
     grid-template-columns: 50% 50%;
@@ -246,7 +249,7 @@ $gray:#ccd4de;
   }
 
   .banner-texts__header {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .banner-texts__calculator,
@@ -254,6 +257,10 @@ $gray:#ccd4de;
     margin: 8px 16px 8px 0;
     padding: 8px;
     font-size: 14px;
+  }
+
+  .offers__header {
+    font-size: 32px;
   }
 
   .offers {
@@ -289,6 +296,37 @@ $gray:#ccd4de;
 
   .overall {
     display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__content {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .testimonial {
+    padding-left: 0;
+  }
+
+  .testimonials__main {
+    width: 65%;
+    padding-right: 0;
+  }
+
+  .overall__header {
+    font-size: 32px;
+  }
+
+  .overall__content {
+    font-size: 14px;
+    line-height: 1.4;
+    padding-left: 16px;
+
+  }
+
+  .culture {
+    display: flex;
+    margin: 40px 0;
     flex-direction: column;
   }
 }
