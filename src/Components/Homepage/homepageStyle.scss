@@ -217,11 +217,25 @@ $gray:#ccd4de;
   width: 100%;
 }
 
-
-
 @media (max-width: 1000px) {
+
+  .banner-texts__header {
+    text-align: center;
+  }
+
+  .banner-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-texts__subheader {
+    text-align: center;
+  }
+
   .banner-texts__calculator {
     min-width: 176px;
+    text-align: center;
   }
 
   .culture {

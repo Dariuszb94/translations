@@ -1,16 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-const CalculatorContact = () => {
+import PropTypes from "prop-types";
+
+const CalculatorContact = ({ showMenu }) => {
   return (
-    <ul className="calculatorContact">
+    <ul className={`calculatorContact${showMenu ? "--active" : ""}`}>
       <li>
-        <a className="calculatorContact__contact">Kontakt</a>
+        <a
+          className={`calculatorContact__contact${showMenu ? "--active" : ""}`}
+        >
+          Kontakt
+        </a>
       </li>
       <li>
         <NavLink
           to="/estimation"
           activeClassName="active"
-          className="calculatorContact__calculator"
+          className={`calculatorContact__contact${showMenu ? "--active" : ""}`}
         >
           Natychmiastowa wycena
         </NavLink>
@@ -18,5 +24,7 @@ const CalculatorContact = () => {
     </ul>
   );
 };
-
+CalculatorContact.propTypes = {
+  showMenu: PropTypes.boolean,
+};
 export default CalculatorContact;

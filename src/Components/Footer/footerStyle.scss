@@ -55,3 +55,25 @@
 .mail-message {
   display: none;
 }
+
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 40px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right__link-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .footer-left__text {
+    text-align: center;
+  }
+
+  .footer-right__text {
+    text-align: center;
+  }
+}

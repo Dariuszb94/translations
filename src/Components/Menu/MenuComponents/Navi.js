@@ -1,13 +1,21 @@
 import React from "react";
-const Navi = () => {
+import PropTypes from "prop-types";
+
+const Navi = ({ showMenu }) => {
   return (
-    <ul className="navi">
-      <li className="navi__element">Przedsiębiorstwa</li>
-      <li className="navi__element">Programiści</li>
-      <li className="navi__element">Tłumacze</li>
-      <li className="navi__element">Labs</li>
+    <ul className={`navi${showMenu ? "--active" : ""}`}>
+      <li className={`navi__element${showMenu ? "--active" : ""}`}>
+        Przedsiębiorstwa
+      </li>
+      <li className={`navi__element${showMenu ? "--active" : ""}`}>
+        Programiści
+      </li>
+      <li className={`navi__element${showMenu ? "--active" : ""}`}>Tłumacze</li>
+      <li className={`navi__element${showMenu ? "--active" : ""}`}>Labs</li>
     </ul>
   );
 };
-
+Navi.propTypes = {
+  showMenu: PropTypes.boolean,
+};
 export default Navi;

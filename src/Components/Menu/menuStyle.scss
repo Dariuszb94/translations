@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 1000px) {
-  .navi {
+  .navi--active {
     position: fixed;
     top: 150px;
     display: flex;
@@ -63,12 +63,12 @@
     z-index: 50;
   }
 
-  .navi__element {
+  .navi__element--active {
     margin-bottom: 16px;
     color: white;
   }
 
-  .overlay {
+  .overlay--active {
     position: fixed;
     padding: 0px;
     margin: 0px;
@@ -80,7 +80,7 @@
     z-index: 20;
   }
 
-  .calculatorContact {
+  .calculatorContact--active {
     z-index: 50;
     position: fixed;
     top: 350px;
