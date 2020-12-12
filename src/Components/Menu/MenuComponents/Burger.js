@@ -13,12 +13,14 @@ const Burger = ({ showHideMenu }) => {
     <React.Fragment>
       {menu ? (
         <CloseIcon
+          className="menu__close"
           onClick={() => {
             showMenu(0);
           }}
         />
       ) : (
         <MenuIcon
+          className="menu__open"
           onClick={() => {
             showMenu(1);
           }}

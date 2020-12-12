@@ -16,7 +16,9 @@ const CalculatorContact = ({ showMenu }) => {
         <NavLink
           to="/estimation"
           activeClassName="active"
-          className={`calculatorContact__contact${showMenu ? "--active" : ""}`}
+          className={`calculatorContact__calculator${
+            showMenu ? "--active" : ""
+          }`}
         >
           Natychmiastowa wycena
         </NavLink>

@@ -16,7 +16,6 @@ const Menu = () => {
       <Navi showMenu={showMenu} />
       <CalculatorContact showMenu={showMenu} />
       <Burger showHideMenu={show} />
-      {showMenu}
       <div className={`overlay${showMenu ? "--active" : ""}`} />
     </section>
   );
