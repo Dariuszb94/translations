@@ -126,6 +126,10 @@ $gray:#ccd4de;
   padding-left: 16px;
 }
 
+.sliding {
+  animation: 1s ease-in-out slide;
+}
+
 .testimonial__img {
   border-radius: 50%;
   width: 96px;
@@ -342,5 +346,15 @@ $gray:#ccd4de;
     display: flex;
     margin: 40px 0;
     flex-direction: column;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }

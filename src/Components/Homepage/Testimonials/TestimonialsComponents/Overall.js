@@ -12,7 +12,6 @@ const Overall = () => {
         żądanie, ale również dostarczając zaawansowane, w pełni zarządzane
         rozwiązania.
       </p>
-      <a className="overall__link">Zapoznaj się z opiniami klientów</a>
     </div>
   );
 };

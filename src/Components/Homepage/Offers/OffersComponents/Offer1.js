@@ -1,5 +1,7 @@
 import React from "react";
 import Offer from "../../../../Assets/professional_translation.png";
+import { NavLink } from "react-router-dom";
+
 const Offer1 = () => {
   return (
     <div className="offer">
@@ -11,7 +13,13 @@ const Offer1 = () => {
         zgodnie z Twoim harmonogramem i wymaganiami, na 183 języków i w 40
         obszarach specjalizacji.
       </p>
-      <a className="offer__link">Natychmiastowa wycena</a>
+      <NavLink
+        to="/estimation"
+        activeClassName="active"
+        className="offer__link"
+      >
+        Natychmiastowa wycena
+      </NavLink>
     </div>
   );
 };
