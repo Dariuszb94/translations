@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Offer from "../../../../Assets/developers_tools.png";
-const Offer3 = () => {
+import PropTypes from "prop-types";
+
+const Offer3 = ({ isVisible }) => {
+  useEffect(() => {
+    document
+      .querySelector(".offer:nth-child(4)")
+      .classList.add("offer-sliding-right");
+    setTimeout(function () {
+      document
+        .querySelector(".offer:nth-child(4)")
+        .classList.remove("offer-sliding-right");
+    }, 1000);
+  }, [isVisible]);
   return (
     <div className="offer">
       <img className="offer__img" src={Offer} />
@@ -14,6 +26,9 @@ const Offer3 = () => {
       <a className="offer__link">Dowiedz się więcej</a>
     </div>
   );
+};
+Offer3.propTypes = {
+  isVisible: PropTypes.boolean,
 };
 
 export default Offer3;

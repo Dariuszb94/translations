@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Offer from "../../../../Assets/professional_translation.png";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const Offer1 = () => {
+const Offer1 = ({ isVisible }) => {
+  useEffect(() => {
+    document
+      .querySelector(".offer:nth-child(2)")
+      .classList.add("offer-sliding-left");
+    setTimeout(function () {
+      document
+        .querySelector(".offer:nth-child(2)")
+        .classList.remove("offer-sliding-left");
+    }, 1000);
+  }, [isVisible]);
   return (
     <div className="offer">
       <img className="offer__img" src={Offer} />
@@ -22,6 +33,9 @@ const Offer1 = () => {
       </NavLink>
     </div>
   );
+};
+Offer1.propTypes = {
+  isVisible: PropTypes.boolean,
 };
 
 export default Offer1;

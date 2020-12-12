@@ -82,6 +82,14 @@ $gray:#ccd4de;
   margin-bottom: 50px;
 }
 
+.offer-sliding-left {
+  animation: 1s ease-in-out slideOffer1;
+}
+
+.offer-sliding-right {
+  animation: 1s ease-in-out slideOffer3;
+}
+
 .offer__header {
   font-size: 24px;
   line-height: 1.33;
@@ -128,6 +136,10 @@ $gray:#ccd4de;
 
 .sliding {
   animation: 1s ease-in-out slide;
+}
+
+.resize {
+  animation: 1s ease-in-out resize;
 }
 
 .testimonial__img {
@@ -293,6 +305,7 @@ $gray:#ccd4de;
     margin-bottom: 20px;
   }
 
+
   .offer__header {
     min-height: 0;
   }
@@ -349,6 +362,21 @@ $gray:#ccd4de;
   }
 }
 
+@keyframes resize {
+  0% {
+    transform: scale(0.01);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
 @keyframes slide {
   from {
     transform: translateX(-100%);
@@ -356,5 +384,33 @@ $gray:#ccd4de;
 
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideOffer1 {
+  0% {
+    transform: translateX(-100%) rotate(-20deg);
+  }
+
+  80% {
+    transform: translateX(10%) rotate(5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes slideOffer3 {
+  0% {
+    transform: translateX(100%) rotate(20deg);
+  }
+
+  80% {
+    transform: translateX(-10%) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
   }
 }

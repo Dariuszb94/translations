@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 const Testimonial = (testimonialInner) => {
   useEffect(() => {
     document.querySelector(".testimonial").classList.add("sliding");
+    document.querySelector(".testimonial__img").classList.add("resize");
     setTimeout(function () {
       document.querySelector(".testimonial").classList.remove("sliding");
-    }, 500);
+      document.querySelector(".testimonial__img").classList.remove("resize");
+    }, 1000);
   }, [testimonialInner]);
   return (
     <div className="testimonial">
