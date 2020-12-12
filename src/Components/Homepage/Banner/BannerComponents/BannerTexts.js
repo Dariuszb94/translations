@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const BannerTexts = () => {
   return (
@@ -8,7 +9,9 @@ const BannerTexts = () => {
         Profesjonalne usługi tłumaczeniowe stały się łatwiejsze. Stworzone przez
         specjalistów, wsparte technologią, sprawnie dostarczane.
       </h2>
-      <a className="banner-texts__calculator">Natychmiastowa wycena</a>
+      <NavLink to="/estimation" className="banner-texts__calculator">
+        Natychmiastowa wycena
+      </NavLink>
       <a className="banner-texts__about">O nas</a>
     </div>
   );

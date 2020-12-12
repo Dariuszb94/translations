@@ -6,9 +6,7 @@ const CalculatorContact = ({ showMenu }) => {
   return (
     <ul className={`calculatorContact${showMenu ? "--active" : ""}`}>
       <li>
-        <a
-          className={`calculatorContact__contact${showMenu ? "--active" : ""}`}
-        >
+        <a href="tel:000" className="calculatorContact__contact">
           Kontakt
         </a>
       </li>
@@ -16,9 +14,7 @@ const CalculatorContact = ({ showMenu }) => {
         <NavLink
           to="/estimation"
           activeClassName="active"
-          className={`calculatorContact__calculator${
-            showMenu ? "--active" : ""
-          }`}
+          className="calculatorContact__calculator"
         >
           Natychmiastowa wycena
         </NavLink>

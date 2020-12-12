@@ -10,10 +10,11 @@ const Menu = () => {
   const show = (show) => {
     hideShowMenu(show);
   };
+  useEffect(() => {}, [showMenu]);
   return (
     <section className="menu">
       <Logo />
-      <Navi showMenu={showMenu} />
+      <Navi showMenuInherit={showMenu} showHideMenu={show} />
       <CalculatorContact showMenu={showMenu} />
       <Burger showHideMenu={show} />
       <div className={`overlay${showMenu ? "--active" : ""}`} />

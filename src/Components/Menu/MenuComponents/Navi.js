@@ -1,21 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Navi = ({ showMenu }) => {
+const Navi = ({ showMenuInherit, showHideMenu }) => {
+  const [menu, showMenu] = useState(1);
+  useEffect(() => {
+    showHideMenu(menu);
+  }, [menu]);
+
   return (
-    <ul className={`navi${showMenu ? "--active" : ""}`}>
-      <li className={`navi__element${showMenu ? "--active" : ""}`}>
-        Przedsiębiorstwa
+    <ul className={`navi${showMenuInherit ? "--active" : ""}`}>
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
+        <NavLink
+          to="/estimation"
+          activeClassName="active"
+          className={`navi__element${showMenuInherit ? "--active" : ""}`}
+        >
+          Przedsiębiorstwa
+        </NavLink>
       </li>
-      <li className={`navi__element${showMenu ? "--active" : ""}`}>
-        Programiści
+
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
+        <NavLink
+          to="/estimation"
+          activeClassName="active"
+          className={`navi__element${showMenuInherit ? "--active" : ""}`}
+        >
+          Programiści
+        </NavLink>
       </li>
-      <li className={`navi__element${showMenu ? "--active" : ""}`}>Tłumacze</li>
-      <li className={`navi__element${showMenu ? "--active" : ""}`}>Labs</li>
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
+        <NavLink
+          to="/estimation"
+          activeClassName="active"
+          className={`navi__element${showMenuInherit ? "--active" : ""}`}
+        >
+          Tłumacze
+        </NavLink>
+      </li>
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
+        <NavLink
+          to="/estimation"
+          activeClassName="active"
+          className={`navi__element${showMenuInherit ? "--active" : ""}`}
+        >
+          Labs
+        </NavLink>
+      </li>
     </ul>
   );
 };
 Navi.propTypes = {
-  showMenu: PropTypes.boolean,
+  showMenuInherit: PropTypes.boolean,
+  showHideMenu: PropTypes.func,
 };
 export default Navi;

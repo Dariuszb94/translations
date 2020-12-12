@@ -6,6 +6,10 @@
   display: block;
 }
 
+svg.menu__open {
+  display: none;
+}
+
 .logo {
   width: 72px;
 }
@@ -36,6 +40,7 @@
 .calculatorContact__contact {
   box-shadow: 0 0 0 1px #ccd4de;
   background-color: white;
+  color: black;
   @include calculatorContact;
 }
 
@@ -54,6 +59,9 @@
 }
 
 @media (max-width: 1000px) {
+  svg.menu__open {
+    display: initial;
+  }
 
   .calculatorContact,
   .navi {
@@ -94,6 +102,8 @@
   .navi__element--active {
     margin-bottom: 16px;
     color: white;
+    margin-bottom: 20px;
+    display: block;
   }
 
   .overlay--active {
@@ -123,19 +133,9 @@
     margin-bottom: 32px;
   }
 
-  .calculatorContact__contact--active {
-    box-shadow: 0 0 0 1px #ccd4de;
-    background-color: white;
-    @include calculatorContact;
-  }
 
-  .calculatorContact__calculator--active {
-    box-shadow: 0 0 0 1px #00479a;
-    background-color: #00479a;
-    color: white;
-    @include calculatorContact;
+  .calculatorContact__calculator {
     margin-top: 20px;
-
   }
 }
 
