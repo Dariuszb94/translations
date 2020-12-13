@@ -14,6 +14,7 @@ const Offers = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   function handleScroll() {
+    console.log(document.querySelector(".offers").getBoundingClientRect());
     if (
       document.querySelector(".offers").getBoundingClientRect().top <
       window.innerHeight - 120

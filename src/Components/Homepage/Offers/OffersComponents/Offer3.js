@@ -7,9 +7,11 @@ const Offer3 = ({ isVisible, isVisibleMobile }) => {
     let classes = ["offer-sliding-right", "offer-sliding-left-mobile"];
     document.querySelector(".offer:nth-child(4)").classList.add(...classes);
     setTimeout(function () {
-      document
-        .querySelector(".offer:nth-child(4)")
-        .classList.remove(...classes);
+      if (document.querySelector(".offer:nth-child(4)")) {
+        document
+          .querySelector(".offer:nth-child(4)")
+          .classList.remove(...classes);
+      }
     }, 1000);
   }, [isVisible, isVisibleMobile]);
   return (

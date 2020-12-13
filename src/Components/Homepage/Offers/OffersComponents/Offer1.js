@@ -9,10 +9,12 @@ const Offer1 = ({ isVisible, isVisibleMobile }) => {
 
     document.querySelector(".offer:nth-child(2)").classList.add(...classes);
     setTimeout(function () {
-      document
-        .querySelector(".offer:nth-child(2)")
-        .classList.remove(...classes);
-    }, 5000);
+      if (document.querySelector(".offer:nth-child(2)")) {
+        document
+          .querySelector(".offer:nth-child(2)")
+          .classList.remove(...classes);
+      }
+    }, 1000);
   }, [isVisible, isVisibleMobile]);
   return (
     <div className="offer offer1">
