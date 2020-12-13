@@ -22,6 +22,7 @@ svg.menu__open {
   margin: 0 16px;
   font-size: 16px;
   line-height: 24px;
+  color: black;
 }
 
 .menu {
@@ -58,7 +59,28 @@ svg.menu__open {
   text-decoration: none;
 }
 
+.calculatorContact__calculator:hover {
+  background-color: #1c65b9;
+  transition: background-color 0.5s;
+}
+
 @media (max-width: 1000px) {
+  .banner {
+    margin-top: 12px;
+  }
+
+  .banner-texts__header {
+    font-size: 32px;
+  }
+
+  .banner-texts__header {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
   .calculatorContact__calculator {
     margin-left: 0;
   }
@@ -76,18 +98,24 @@ svg.menu__open {
     z-index: 200;
     fill: white;
     position: fixed;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 24px;
     font-size: 40px;
     cursor: pointer;
     animation: 1s ease-in-out 0.6s rotate;
   }
 
+  .banner-texts__subheader {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
   svg.menu__open {
 
     position: fixed;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 24px;
     font-size: 40px;
     cursor: pointer;
     animation: 1s ease-in-out fall;

@@ -33,6 +33,11 @@ $gray:#ccd4de;
 .banner-texts {
   @include col;
   align-items: flex-start;
+  animation: 1.5s ease-in-out slideOffer1;
+}
+
+.banner-image {
+  animation: 1.5s ease-in-out slideOffer3;
 }
 
 .banner-texts__header {
@@ -56,6 +61,11 @@ $gray:#ccd4de;
   @include banner-texts;
   font-weight: 500;
   line-height: 24px;
+}
+
+.banner-texts__calculator:hover {
+  background-color: #1c65b9;
+  transition: background-color 0.5s;
 }
 
 .banner-texts__about {
@@ -234,6 +244,15 @@ $gray:#ccd4de;
 }
 
 @media (max-width: 1000px) {
+  .banner-texts {
+    @include col;
+    animation: none;
+  }
+
+  .banner-image {
+    animation: none;
+  }
+
   .offer-sliding-left-mobile {
     animation: 1.5s ease-in-out slideOffer1;
   }
@@ -259,6 +278,8 @@ $gray:#ccd4de;
   .banner-texts__calculator {
     min-width: 176px;
     text-align: center;
+    animation: 1.5s ease-in-out slideOffer1;
+
   }
 
   .culture {
@@ -294,6 +315,10 @@ $gray:#ccd4de;
     margin: 8px 16px 8px 0;
     padding: 8px;
     font-size: 14px;
+  }
+
+  .banner-texts__about {
+    animation: 1.5s ease-in-out slideOffer3;
   }
 
   .offers__header {

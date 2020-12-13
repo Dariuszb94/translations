@@ -8,7 +8,6 @@ import PropTypes from "prop-types";
 function App({ location }) {
   return (
     <div className="App">
-             
       <Menu />
       <Switch location={location}>
                   

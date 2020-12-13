@@ -4,7 +4,9 @@ import Logo from "../../../Assets/logo.png";
 const FooterLeft = () => {
   return (
     <div className="footer-left">
-      <img src={Logo} className="footer-left__img" />
+      <a href="/">
+        <img src={Logo} className="footer-left__img" />
+      </a>
       <div className="footer-left__text">
         Naszą misją jest zniesienie barier językowych poprzez połączenie pracy
         wykwalifikowanych tłumaczy z możliwościami sztucznej inteligencji, a

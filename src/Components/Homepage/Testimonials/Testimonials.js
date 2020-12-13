@@ -28,7 +28,7 @@ const Testimonials = () => {
         <ul className="testimonials__list">
           {Array.from([0, 1, 2], (i) => {
             return (
-              <li>
+              <li key={i}>
                 <button
                   className={`testimonials__list__button${
                     count === i ? "--active" : ""
