@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const CalculatorContact = ({ showMenu }) => {
+const CalculatorContact = ({ showMenuInherit, showHideMenu }) => {
+  const [menu, showMenu] = useState(1);
+  useEffect(() => {
+    showHideMenu(menu);
+  }, [menu]);
   return (
-    <ul className={`calculatorContact${showMenu ? "--active" : ""}`}>
-      <li>
+    <ul className={`calculatorContact${showMenuInherit ? "--active" : ""}`}>
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
         <a href="tel:000" className="calculatorContact__contact">
           Kontakt
         </a>
       </li>
-      <li>
+      <li
+        onClick={() => {
+          showMenu(0);
+        }}
+      >
         <NavLink
           to="/estimation"
           activeClassName="active"
@@ -23,6 +35,8 @@ const CalculatorContact = ({ showMenu }) => {
   );
 };
 CalculatorContact.propTypes = {
-  showMenu: PropTypes.boolean,
+  showMenuInherit: PropTypes.boolean,
+  showHideMenu: PropTypes.func,
 };
+
 export default CalculatorContact;

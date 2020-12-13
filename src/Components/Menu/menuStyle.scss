@@ -39,7 +39,7 @@ svg.menu__open {
 }
 
 .calculatorContact__contact {
-  box-shadow: 0 0 0 1px #ccd4de;
+  box-shadow: 0px 2px 12px #ccd4de;
   background-color: white;
   color: black;
   @include calculatorContact;
@@ -52,7 +52,7 @@ svg.menu__open {
 
 .calculatorContact__calculator {
   @include calculatorContact;
-  box-shadow: 0 0 0 1px #00479a;
+  box-shadow: 0px 2px 12px #00479a;
   background-color: #00479a;
   color: white;
   margin-left: 14px;

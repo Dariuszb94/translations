@@ -15,7 +15,7 @@ const Menu = () => {
     <section className="menu">
       <Logo />
       <Navi showMenuInherit={showMenu} showHideMenu={show} />
-      <CalculatorContact showMenu={showMenu} />
+      <CalculatorContact showMenuInherit={showMenu} showHideMenu={show} />
       <Burger showHideMenu={show} />
       <div className={`overlay${showMenu ? "--active" : ""}`} />
     </section>
