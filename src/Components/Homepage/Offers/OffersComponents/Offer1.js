@@ -3,19 +3,19 @@ import Offer from "../../../../Assets/professional_translation.png";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Offer1 = ({ isVisible }) => {
+const Offer1 = ({ isVisible, isVisibleMobile }) => {
   useEffect(() => {
-    document
-      .querySelector(".offer:nth-child(2)")
-      .classList.add("offer-sliding-left");
+    let classes = ["offer-sliding-left", "offer-sliding-left-mobile"];
+
+    document.querySelector(".offer:nth-child(2)").classList.add(...classes);
     setTimeout(function () {
       document
         .querySelector(".offer:nth-child(2)")
-        .classList.remove("offer-sliding-left");
-    }, 1000);
-  }, [isVisible]);
+        .classList.remove(...classes);
+    }, 5000);
+  }, [isVisible, isVisibleMobile]);
   return (
-    <div className="offer">
+    <div className="offer offer1">
       <img className="offer__img" src={Offer} />
       <h3 className="offer__header">Profesjonalne tłumaczenie</h3>
       <p className="offer__content">
@@ -36,6 +36,7 @@ const Offer1 = ({ isVisible }) => {
 };
 Offer1.propTypes = {
   isVisible: PropTypes.boolean,
+  isVisibleMobile: PropTypes.boolean,
 };
 
 export default Offer1;

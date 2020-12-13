@@ -2,19 +2,18 @@ import React, { useState, useEffect } from "react";
 import Offer from "../../../../Assets/developers_tools.png";
 import PropTypes from "prop-types";
 
-const Offer3 = ({ isVisible }) => {
+const Offer3 = ({ isVisible, isVisibleMobile }) => {
   useEffect(() => {
-    document
-      .querySelector(".offer:nth-child(4)")
-      .classList.add("offer-sliding-right");
+    let classes = ["offer-sliding-right", "offer-sliding-left-mobile"];
+    document.querySelector(".offer:nth-child(4)").classList.add(...classes);
     setTimeout(function () {
       document
         .querySelector(".offer:nth-child(4)")
-        .classList.remove("offer-sliding-right");
+        .classList.remove(...classes);
     }, 1000);
-  }, [isVisible]);
+  }, [isVisible, isVisibleMobile]);
   return (
-    <div className="offer">
+    <div className="offer offer3">
       <img className="offer__img" src={Offer} />
       <h3 className="offer__header">Narzędzia dla programistów</h3>
       <p className="offer__content">
@@ -29,6 +28,7 @@ const Offer3 = ({ isVisible }) => {
 };
 Offer3.propTypes = {
   isVisible: PropTypes.boolean,
+  isVisibleMobile: PropTypes.boolean,
 };
 
 export default Offer3;

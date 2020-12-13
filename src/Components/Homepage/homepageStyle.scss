@@ -83,11 +83,11 @@ $gray:#ccd4de;
 }
 
 .offer-sliding-left {
-  animation: 1s ease-in-out slideOffer1;
+  animation: 1.5s ease-in-out slideOffer1;
 }
 
 .offer-sliding-right {
-  animation: 1s ease-in-out slideOffer3;
+  animation: 1.5s ease-in-out slideOffer3;
 }
 
 .offer__header {
@@ -234,6 +234,13 @@ $gray:#ccd4de;
 }
 
 @media (max-width: 1000px) {
+  .offer-sliding-left-mobile {
+    animation: 1.5s ease-in-out slideOffer1;
+  }
+
+  .offer-sliding-right-mobile {
+    animation: 1.5s ease-in-out slideOffer3;
+  }
 
   .banner-texts__header {
     text-align: center;
