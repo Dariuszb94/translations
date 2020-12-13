@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.fc4f1a40.chunk.css",
-    "main.js": "/translations/static/js/main.9dcdb611.chunk.js",
-    "main.js.map": "/translations/static/js/main.9dcdb611.chunk.js.map",
+    "main.css": "/translations/static/css/main.6e2a6115.chunk.css",
+    "main.js": "/translations/static/js/main.3788cbea.chunk.js",
+    "main.js.map": "/translations/static/js/main.3788cbea.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
     "runtime-main.js.map": "/translations/static/js/runtime-main.35137d21.js.map",
     "static/js/2.f8b9510e.chunk.js": "/translations/static/js/2.f8b9510e.chunk.js",
     "static/js/2.f8b9510e.chunk.js.map": "/translations/static/js/2.f8b9510e.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.fc4f1a40.chunk.css.map": "/translations/static/css/main.fc4f1a40.chunk.css.map",
+    "static/css/main.6e2a6115.chunk.css.map": "/translations/static/css/main.6e2a6115.chunk.css.map",
     "static/js/2.f8b9510e.chunk.js.LICENSE.txt": "/translations/static/js/2.f8b9510e.chunk.js.LICENSE.txt",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
     "static/media/corallo.09152400.png": "/translations/static/media/corallo.09152400.png",
     "static/media/developers_tools.51e5fe1c.png": "/translations/static/media/developers_tools.51e5fe1c.png",
     "static/media/enterprise_solutions.482a454b.png": "/translations/static/media/enterprise_solutions.482a454b.png",
     "static/media/giardiniere-translated.161321d7.png": "/translations/static/media/giardiniere-translated.161321d7.png",
-    "static/media/logo.ea90488a.png": "/translations/static/media/logo.ea90488a.png",
     "static/media/mauri.685ec3fa.png": "/translations/static/media/mauri.685ec3fa.png",
     "static/media/professional_translation.426eec21.png": "/translations/static/media/professional_translation.426eec21.png",
     "static/media/vanek.9df2502b.jpg": "/translations/static/media/vanek.9df2502b.jpg"
@@ -23,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
     "static/js/2.f8b9510e.chunk.js",
-    "static/css/main.fc4f1a40.chunk.css",
-    "static/js/main.9dcdb611.chunk.js"
+    "static/css/main.6e2a6115.chunk.css",
+    "static/js/main.3788cbea.chunk.js"
   ]
 }
