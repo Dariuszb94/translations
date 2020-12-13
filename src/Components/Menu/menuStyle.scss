@@ -119,6 +119,7 @@ svg.menu__open {
     font-size: 40px;
     cursor: pointer;
     animation: 1s ease-in-out fall;
+    z-index: 40;
   }
 
   .navi--active {

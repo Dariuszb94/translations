@@ -4,7 +4,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const To = () => {
   const [listOpacity, showList] = useState(0);
-  const [language, changeLanguage] = useState("Bajan");
+  const [language, changeLanguage] = useState("1Bajan");
   const languages = [
     "1Albański",
     "1Amharski",

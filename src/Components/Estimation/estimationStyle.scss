@@ -50,6 +50,7 @@
   overflow-y: auto;
   box-shadow: 0 0 0 1px #abb3bd, 0 4px 8px rgba(0, 0, 0, 0.16);
   background-color: white;
+  margin-top: 8px;
 }
 
 .from__list--hidden,
@@ -260,4 +261,76 @@
   font-weight: 500;
   margin: 40px 0;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .from__list--shown {
+    z-index: 20;
+  }
+
+  .to__language {
+    z-index: 5;
+  }
+
+  .estimation-main,
+  .solutions {
+    width: 940px;
+    padding: 30px 24px 12px;
+  }
+
+  .from__language,
+  .from__language--active,
+  .to__language--active,
+  .to__language {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .solutions__list {
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 100px);
+  }
+
+  .solutions {
+    width: 100%;
+  }
+
+  .solution {
+    width: 100%;
+    max-width: 500px;
+    padding: 48px 12px 24px;
+  }
+
+  .estimation-main {
+    width: calc(100% - 48px);
+  }
+
+  .from,
+  .to {
+    position: relative;
+    width: 100%;
+  }
+
+  .from__language,
+  .from__language--active,
+  .to__language--active,
+  .from__language--active,
+  .to__language--active,
+  .from__language--active,
+  .to__language--active,
+  .to__language {
+    width: calc(100% - 32px);
+  }
+
+  .estimation__header {
+    font-size: 32px;
+  }
+
+  .estimation__subheader {
+    font-size: 16px;
+    line-height: 1.3;
+
+  }
 }
