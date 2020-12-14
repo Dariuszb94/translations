@@ -64,7 +64,15 @@ svg.menu__open {
   transition: background-color 0.5s;
 }
 
+.overlay {
+  display: none;
+}
+
 @media (max-width: 1000px) {
+  .overlay {
+    display: initial;
+  }
+
   .banner {
     margin-top: 12px;
   }
@@ -140,6 +148,7 @@ svg.menu__open {
   }
 
   .overlay--active {
+    display: initial;
     position: fixed;
     padding: 0px;
     margin: 0px;

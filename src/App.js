@@ -1,5 +1,6 @@
 import React from "react";
 import Homepage from "./Components/Homepage/Homepage";
+import Enterprises from "./Components/Enterprises/Enterprises";
 import Estimation from "./Components/Estimation/Estimation";
 import Menu from "./Components/Menu/Menu";
 import Footer from "./Components/Footer/Footer";
@@ -14,7 +15,9 @@ function App({ location }) {
         <Route exact path="/home" component={Homepage} />
                   
         <Route path="/estimation" component={Estimation} />
-                           
+                         
+        <Route path="/enterprises" component={Enterprises} />
+          
         <Route component={Homepage} />
       </Switch>
       <Footer />
