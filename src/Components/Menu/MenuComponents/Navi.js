@@ -30,7 +30,7 @@ const Navi = ({ showMenuInherit, showHideMenu }) => {
         }}
       >
         <NavLink
-          to="/estimation"
+          to="/programmers"
           activeClassName="active"
           className={`navi__element${showMenuInherit ? "--active" : ""}`}
         >
