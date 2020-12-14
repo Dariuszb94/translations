@@ -1,6 +1,6 @@
 import Banner from "./Banner/Banner";
 import "./programmersStyle.scss";
-import Culture from "./Culture/Culture";
+import Grid from "./Grid/Grid";
 
 import React from "react";
 
@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <section>
       <Banner />
-      <Culture />
+      <Grid />
     </section>
   );
 };
