@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.c4b10285.chunk.css",
-    "main.js": "/translations/static/js/main.ba6ae0a1.chunk.js",
-    "main.js.map": "/translations/static/js/main.ba6ae0a1.chunk.js.map",
+    "main.css": "/translations/static/css/main.71338dca.chunk.css",
+    "main.js": "/translations/static/js/main.29026ef1.chunk.js",
+    "main.js.map": "/translations/static/js/main.29026ef1.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
     "runtime-main.js.map": "/translations/static/js/runtime-main.35137d21.js.map",
     "static/js/2.8c8f024e.chunk.js": "/translations/static/js/2.8c8f024e.chunk.js",
     "static/js/2.8c8f024e.chunk.js.map": "/translations/static/js/2.8c8f024e.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.c4b10285.chunk.css.map": "/translations/static/css/main.c4b10285.chunk.css.map",
+    "static/css/main.71338dca.chunk.css.map": "/translations/static/css/main.71338dca.chunk.css.map",
     "static/js/2.8c8f024e.chunk.js.LICENSE.txt": "/translations/static/js/2.8c8f024e.chunk.js.LICENSE.txt",
     "static/media/astronave-translated.434bad27.png": "/translations/static/media/astronave-translated.434bad27.png",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
@@ -16,6 +16,7 @@
     "static/media/developers_tools.51e5fe1c.png": "/translations/static/media/developers_tools.51e5fe1c.png",
     "static/media/enterprise_solutions.482a454b.png": "/translations/static/media/enterprise_solutions.482a454b.png",
     "static/media/giardiniere-translated.161321d7.png": "/translations/static/media/giardiniere-translated.161321d7.png",
+    "static/media/joomla.09b4409e.png": "/translations/static/media/joomla.09b4409e.png",
     "static/media/mauri.685ec3fa.png": "/translations/static/media/mauri.685ec3fa.png",
     "static/media/orchestra-translated.44a99a2b.png": "/translations/static/media/orchestra-translated.44a99a2b.png",
     "static/media/piloti-translated.a52ac302.png": "/translations/static/media/piloti-translated.a52ac302.png",
@@ -25,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
     "static/js/2.8c8f024e.chunk.js",
-    "static/css/main.c4b10285.chunk.css",
-    "static/js/main.ba6ae0a1.chunk.js"
+    "static/css/main.71338dca.chunk.css",
+    "static/js/main.29026ef1.chunk.js"
   ]
 }
