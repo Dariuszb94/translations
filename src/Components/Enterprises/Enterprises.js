@@ -1,7 +1,6 @@
 import Banner from "./Banner/Banner";
 import "./enterprisesStyle.scss";
 import Culture from "./Culture/Culture";
-
 import React from "react";
 
 const Homepage = () => {

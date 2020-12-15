@@ -24,11 +24,7 @@ $gray:#ccd4de;
   flex-direction: column;
 }
 
-.banner {
-  display: flex;
-  margin-top: 63px;
-  padding: 0 16px;
-}
+
 
 .banner-texts {
   @include col;
@@ -195,7 +191,7 @@ $gray:#ccd4de;
 
 }
 
-@media (max-width: 5000px) {
+@media (max-width: 500px) {
   .grid__element {
     padding: 0 0;
   }

@@ -1,0 +1,89 @@
+.contact-hidden {
+    background: linear-gradient(#4972af, #2e3cd3);
+    position: fixed;
+    top: 400px;
+    background: linear-gradient(#4972af, #2e3cd3);
+    width: 300px;
+    left: 0;
+    transition: transform 0.3s ease-out;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: 2;
+}
+
+.contact-hide {
+    padding-left: 12px;
+}
+
+.contact-hide a {
+    color: white;
+    margin-left: 8px;
+}
+
+.contact-hide__columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-hide svg {
+    fill: white;
+}
+
+.contact-hide__columns__column {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-hide-back {
+    position: absolute;
+    right: 12px;
+    top: 28px;
+    animation: go-back 1s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+.contact-text {
+    transform: rotate(-90deg);
+    color: white;
+    position: relative;
+    top: 110px;
+}
+
+.contact {
+    position: fixed;
+    top: 400px;
+    height: 200px;
+    background: linear-gradient(#4972af, #2e3cd3);
+    width: 40px;
+    left: 0;
+    border-bottom-right-radius: 16px;
+    transition: transform 0.3s ease-out;
+    transform-origin: top;
+    z-index: 2;
+}
+
+@media (max-width: 1000px) {
+    .contact-text {
+        top: 68px;
+    }
+
+    .contact {
+        height: 120px;
+    }
+}
+
+@keyframes go-back {
+    from {
+        right: 12px;
+        transform: scale(1);
+    }
+
+    to {
+        right: 32px;
+        transform: scale(1.4);
+
+    }
+}

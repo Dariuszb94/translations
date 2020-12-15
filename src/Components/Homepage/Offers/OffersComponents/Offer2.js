@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Offer from "../../../../Assets/enterprise_solutions.png";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const Offer2 = ({ isVisibleMobile }) => {
   useEffect(() => {
@@ -23,7 +24,9 @@ const Offer2 = ({ isVisibleMobile }) => {
         zautomatyzowane usługi tłumaczenia transakcji: oferujemy szeroki zakres
         w pełni zarządzanych usług tłumaczeniowych.
       </p>
-      <a className="offer__link">Dowiedz się więcej</a>
+      <NavLink to="/enterprises" activeClassName="offer__link">
+        Dowiedz się więcej
+      </NavLink>
     </div>
   );
 };

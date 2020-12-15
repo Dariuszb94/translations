@@ -27,7 +27,7 @@ $gray:#ccd4de;
 .banner {
   display: flex;
   margin-top: 63px;
-  padding: 0 16px;
+  padding: 0 48px;
 }
 
 .banner-texts {
@@ -126,7 +126,7 @@ $gray:#ccd4de;
   margin-top: 111px;
   flex-wrap: wrap;
   @include flex-sb;
-  padding: 0 16px;
+  padding: 0 48px;
   margin-bottom: 80px;
 }
 

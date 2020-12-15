@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Offer from "../../../../Assets/developers_tools.png";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const Offer3 = ({ isVisible, isVisibleMobile }) => {
   useEffect(() => {
@@ -24,7 +25,9 @@ const Offer3 = ({ isVisible, isVisibleMobile }) => {
         plików, adaptacyjne tłumaczenie maszynowe wykorzystujące sieci neuronowe
         i o wiele więcej.
       </p>
-      <a className="offer__link">Dowiedz się więcej</a>
+      <NavLink to="/programmers" activeClassName="offer__link">
+        Dowiedz się więcej
+      </NavLink>
     </div>
   );
 };

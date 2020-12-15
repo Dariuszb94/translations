@@ -10,7 +10,6 @@ const Overall = () => {
         hiper-skalowalna. Otwieramy świat, w którym inteligentni klienci i
         zaangażowani tłumacze mogą się z sobą bezpośrednio łączyć.
       </p>
-      <a className="overall__link">O nas</a>
     </div>
   );
 };
