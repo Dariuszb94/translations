@@ -2,12 +2,19 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 const Testimonial = (testimonialInner) => {
   useEffect(() => {
-    document.querySelector(".testimonial").classList.add("sliding");
-    document.querySelector(".testimonial__img").classList.add("resize");
-    setTimeout(function () {
-      document.querySelector(".testimonial").classList.remove("sliding");
-      document.querySelector(".testimonial__img").classList.remove("resize");
-    }, 1000);
+    if (document.querySelector(".testimonial")) {
+      document.querySelector(".testimonial").classList.add("sliding");
+      document.querySelector(".testimonial__img").classList.add("resize");
+
+      setTimeout(function () {
+        if (document.querySelector(".testimonial")) {
+          document.querySelector(".testimonial").classList.remove("sliding");
+          document
+            .querySelector(".testimonial__img")
+            .classList.remove("resize");
+        }
+      }, 1000);
+    }
   }, [testimonialInner]);
   return (
     <div className="testimonial">

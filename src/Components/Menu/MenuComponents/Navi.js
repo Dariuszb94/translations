@@ -16,20 +16,6 @@ const Navi = ({ showMenuInherit, showHideMenu }) => {
         }}
       >
         <NavLink
-          to="/enterprises"
-          activeClassName="active"
-          className={`navi__element${showMenuInherit ? "--active" : ""}`}
-        >
-          Przedsiębiorstwa
-        </NavLink>
-      </li>
-
-      <li
-        onClick={() => {
-          showMenu(0);
-        }}
-      >
-        <NavLink
           to="/programmers"
           activeClassName="active"
           className={`navi__element${showMenuInherit ? "--active" : ""}`}
@@ -43,24 +29,11 @@ const Navi = ({ showMenuInherit, showHideMenu }) => {
         }}
       >
         <NavLink
-          to="/estimation"
+          to="/enterprises"
           activeClassName="active"
           className={`navi__element${showMenuInherit ? "--active" : ""}`}
         >
-          Tłumacze
-        </NavLink>
-      </li>
-      <li
-        onClick={() => {
-          showMenu(0);
-        }}
-      >
-        <NavLink
-          to="/estimation"
-          activeClassName="active"
-          className={`navi__element${showMenuInherit ? "--active" : ""}`}
-        >
-          Labs
+          Przedsiębiorstwa
         </NavLink>
       </li>
     </ul>

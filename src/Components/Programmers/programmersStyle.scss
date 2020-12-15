@@ -195,6 +195,16 @@ $gray:#ccd4de;
 
 }
 
+@media (max-width: 5000px) {
+  .grid__element {
+    padding: 0 0;
+  }
+
+  .grid__element__img {
+    width: 80%;
+  }
+}
+
 @keyframes resize {
   0% {
     transform: scale(0.01);
