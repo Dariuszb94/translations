@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.a9f3f62d.chunk.css",
-    "main.js": "/translations/static/js/main.c0121bea.chunk.js",
-    "main.js.map": "/translations/static/js/main.c0121bea.chunk.js.map",
+    "main.css": "/translations/static/css/main.8e62079a.chunk.css",
+    "main.js": "/translations/static/js/main.68f3dc99.chunk.js",
+    "main.js.map": "/translations/static/js/main.68f3dc99.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
     "runtime-main.js.map": "/translations/static/js/runtime-main.35137d21.js.map",
     "static/js/2.8c8f024e.chunk.js": "/translations/static/js/2.8c8f024e.chunk.js",
     "static/js/2.8c8f024e.chunk.js.map": "/translations/static/js/2.8c8f024e.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.a9f3f62d.chunk.css.map": "/translations/static/css/main.a9f3f62d.chunk.css.map",
+    "static/css/main.8e62079a.chunk.css.map": "/translations/static/css/main.8e62079a.chunk.css.map",
     "static/js/2.8c8f024e.chunk.js.LICENSE.txt": "/translations/static/js/2.8c8f024e.chunk.js.LICENSE.txt",
     "static/media/astronave-translated.434bad27.png": "/translations/static/media/astronave-translated.434bad27.png",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
     "static/js/2.8c8f024e.chunk.js",
-    "static/css/main.a9f3f62d.chunk.css",
-    "static/js/main.c0121bea.chunk.js"
+    "static/css/main.8e62079a.chunk.css",
+    "static/js/main.68f3dc99.chunk.js"
   ]
 }
