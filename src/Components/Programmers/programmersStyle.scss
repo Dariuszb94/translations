@@ -83,42 +83,44 @@ $gray:#ccd4de;
 .grid {
   height: 200px;
   left: 0;
-  width: 100%;
-
-
+  width: calc(100% - 32px);
+  margin: 0 auto;
 }
 
 .grid:after {
   content: '';
-  height: 200px;
+  height: 140px;
   border-bottom: 1px #ccd4de solid;
   border-top: 1px #ccd4de solid;
   width: 100%;
   position: absolute;
   left: 0;
-
+  transform: translateY(-100%);
 }
 
 .grid:before {
   content: '';
   position: absolute;
   border-bottom: 1px #ccd4de solid;
-  height: 200px;
   width: 100%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .grid-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
 
 .grid__element {
-  height: 100px;
+  height: 140px;
   padding: 0 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 1px #ccd4de solid;
+  border-right: 1px #ccd4de solid;
+  ;
 
 
 }
