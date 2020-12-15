@@ -35,7 +35,7 @@ const CalculatorContact = ({ showMenuInherit, showHideMenu }) => {
   );
 };
 CalculatorContact.propTypes = {
-  showMenuInherit: PropTypes.boolean,
+  showMenuInherit: PropTypes.number,
   showHideMenu: PropTypes.func,
 };
 

@@ -28,7 +28,7 @@ const Offer2 = ({ isVisibleMobile }) => {
   );
 };
 Offer2.propTypes = {
-  isVisibleMobile: PropTypes.boolean,
+  isVisibleMobile: PropTypes.bool,
 };
 
 export default Offer2;

@@ -84,7 +84,7 @@ $gray:#ccd4de;
   height: 200px;
   left: 0;
   width: calc(100% - 32px);
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
 .grid:after {
@@ -107,6 +107,10 @@ $gray:#ccd4de;
   transform: translateY(-50%);
 }
 
+.grid__element__img {
+  cursor: pointer;
+}
+
 .grid-inner {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -115,13 +119,16 @@ $gray:#ccd4de;
 .grid__element {
   height: 140px;
   padding: 0 40px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   border-left: 1px #ccd4de solid;
   border-right: 1px #ccd4de solid;
-  ;
+}
 
+.rotate {
+  animation: 1s ease-in-out rotate;
 
 }
 
@@ -238,5 +245,19 @@ $gray:#ccd4de;
 
   100% {
     transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(720deg);
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }

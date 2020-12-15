@@ -67,7 +67,7 @@ const Navi = ({ showMenuInherit, showHideMenu }) => {
   );
 };
 Navi.propTypes = {
-  showMenuInherit: PropTypes.boolean,
+  showMenuInherit: PropTypes.number,
   showHideMenu: PropTypes.func,
 };
 export default Navi;
