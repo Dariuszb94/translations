@@ -16,6 +16,7 @@ const Characters = ({ charsCallback, charsOverallCallback }) => {
         value={text}
         onChange={(event) => changeText(event.target.value)}
         className="characters__textarea"
+        name="textarea"
       ></textarea>
     </div>
   );
