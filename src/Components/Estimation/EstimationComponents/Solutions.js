@@ -56,6 +56,8 @@ const Solutions = ({ numberOfChars, text }) => {
         type="text"
         placeholder="Email"
         value={mail}
+        id="mail"
+        name="mail"
         className={`solutions__mail-input${!readyToSend ? "--invalid" : ""}`}
         onChange={(e) => {
           changeMail(e.target.value);
