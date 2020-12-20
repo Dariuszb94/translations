@@ -14,30 +14,32 @@ const Offers = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   function handleScroll() {
-    if (
-      document.querySelector(".offers").getBoundingClientRect().top <
-      window.innerHeight - 120
-    )
-      updateVisibility(1);
-    else updateVisibility(0);
-    if (
-      document.querySelector(".offer1").getBoundingClientRect().top <
-      window.innerHeight - 80
-    )
-      updateVisibilityMobile1(1);
-    else updateVisibilityMobile1(0);
-    if (
-      document.querySelector(".offer2").getBoundingClientRect().top <
-      window.innerHeight - 80
-    )
-      updateVisibilityMobile2(1);
-    else updateVisibilityMobile2(0);
-    if (
-      document.querySelector(".offer3").getBoundingClientRect().top <
-      window.innerHeight - 80
-    )
-      updateVisibilityMobile3(1);
-    else updateVisibilityMobile3(0);
+    if (document.querySelector(".offers")) {
+      if (
+        document.querySelector(".offers").getBoundingClientRect().top <
+        window.innerHeight - 120
+      )
+        updateVisibility(1);
+      else updateVisibility(0);
+      if (
+        document.querySelector(".offer1").getBoundingClientRect().top <
+        window.innerHeight - 80
+      )
+        updateVisibilityMobile1(1);
+      else updateVisibilityMobile1(0);
+      if (
+        document.querySelector(".offer2").getBoundingClientRect().top <
+        window.innerHeight - 80
+      )
+        updateVisibilityMobile2(1);
+      else updateVisibilityMobile2(0);
+      if (
+        document.querySelector(".offer3").getBoundingClientRect().top <
+        window.innerHeight - 80
+      )
+        updateVisibilityMobile3(1);
+      else updateVisibilityMobile3(0);
+    }
   }
 
   return (
