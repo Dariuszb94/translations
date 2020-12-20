@@ -32,8 +32,11 @@ describe("Counter Testing", () => {
       target: { value: "test@test.com", name: "mail" },
     });
     expect(solutions.find("#mail").props().value).toBe("test@test.com");
-    expect(solutions.find("#mail").hasClass("solutions__mail-input")).toEqual(
-      true
-    );
+    expect(
+      solutions
+        .find("#mail")
+        .props()
+        .className.includes("solutions__mail-input")
+    ).toEqual(true);
   });
-
+});
