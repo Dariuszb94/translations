@@ -7,6 +7,19 @@ const Characters = ({ charsCallback, charsOverallCallback }) => {
     changeCount(text.trim().split(/\s+/).length);
     charsCallback(text.trim().split(/\s+/).length);
     charsOverallCallback(text);
+    // console.log(document.querySelector(".characters__textarea").offsetWidth);
+    // console.log(document.querySelector(".measure-width").offsetWidth);
+
+    document.querySelector(".measure-width").innerHTML = text;
+
+    document.querySelector(".characters__textarea").style.height = `${
+      24 *
+        Math.floor(
+          document.querySelector(".measure-width").offsetWidth /
+            (document.querySelector(".characters__textarea").offsetWidth - 32)
+        ) +
+      24
+    }px`;
   }, [text]);
 
   return (
@@ -17,7 +30,9 @@ const Characters = ({ charsCallback, charsOverallCallback }) => {
         onChange={(event) => changeText(event.target.value)}
         className="characters__textarea"
         name="textarea"
+        wrap="hard"
       ></textarea>
+      <span className="measure-width" />
     </div>
   );
 };
