@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Banner from "./Banner/Banner";
-import "./programmersStyle.scss";
+import "./ProgrammersStyle.scss";
 import Grid from "./Grid/Grid";
 
 const Homepage = () => {

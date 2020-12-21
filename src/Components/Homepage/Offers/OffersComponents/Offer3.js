@@ -32,8 +32,8 @@ const Offer3 = ({ isVisible, isVisibleMobile }) => {
   );
 };
 Offer3.propTypes = {
-  isVisible: PropTypes.bool,
-  isVisibleMobile: PropTypes.bool,
+  isVisible: PropTypes.number,
+  isVisibleMobile: PropTypes.number,
 };
 
 export default Offer3;

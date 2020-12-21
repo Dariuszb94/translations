@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./menuStyle.scss";
+import "./MenuStyle.scss";
 import Logo from "./MenuComponents/Logo";
 import Burger from "./MenuComponents/Burger";
 import Navi from "./MenuComponents/Navi";
@@ -16,8 +16,13 @@ const Menu = () => {
       <Logo />
       <Navi showMenuInherit={showMenu} showHideMenu={show} />
       <CalculatorContact showMenuInherit={showMenu} showHideMenu={show} />
-      <Burger showHideMenu={show} />
-      <div className={`overlay${showMenu ? "--active" : ""}`} />
+      <Burger showHideMenu={show} showMenuToBurger={showMenu} />
+      <div
+        onClick={() => {
+          hideShowMenu(0);
+        }}
+        className={`overlay${showMenu ? "--active" : ""}`}
+      />
     </section>
   );
 };

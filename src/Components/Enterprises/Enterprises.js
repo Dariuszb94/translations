@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Banner from "./Banner/Banner";
-import "./enterprisesStyle.scss";
+import "./EnterprisesStyle.scss";
 import Culture from "./Culture/Culture";
 
 const Homepage = () => {

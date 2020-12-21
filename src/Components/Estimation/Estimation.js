@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./estimationStyle.scss";
+import "./EstimationStyle.scss";
 import From from "./EstimationComponents/From";
 import To from "./EstimationComponents/To";
 import Characters from "./EstimationComponents/Characters";

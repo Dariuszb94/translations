@@ -1,5 +1,5 @@
 import React from "react";
-import "./footerStyle.scss";
+import "./FooterStyle.scss";
 import FooterLeft from "./FooterComponents/FooterLeft";
 import FooterRight from "./FooterComponents/FooterRight";
 

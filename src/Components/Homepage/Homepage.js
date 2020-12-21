@@ -1,6 +1,6 @@
 import Banner from "./Banner/Banner";
 import Offers from "./Offers/Offers";
-import "./homepageStyle.scss";
+import "./HomepageStyle.scss";
 import Testimonial from "./Testimonials/Testimonials";
 import Culture from "./Culture/Culture";
 

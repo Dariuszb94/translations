@@ -3,12 +3,14 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import PropTypes from "prop-types";
 
-const Burger = ({ showHideMenu }) => {
+const Burger = ({ showHideMenu, showMenuToBurger }) => {
   const [menu, showMenu] = useState(0);
   useEffect(() => {
     showHideMenu(menu);
   }, [menu]);
-
+  useEffect(() => {
+    showMenu(showMenuToBurger);
+  }, [showMenuToBurger]);
   return (
     <React.Fragment>
       {menu ? (
@@ -31,5 +33,6 @@ const Burger = ({ showHideMenu }) => {
 };
 Burger.propTypes = {
   showHideMenu: PropTypes.func,
+  showMenuToBurger: PropTypes.number,
 };
 export default Burger;
