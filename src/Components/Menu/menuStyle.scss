@@ -73,9 +73,6 @@ svg.menu__open {
     display: initial;
   }
 
-  .banner {
-    margin-top: 12px;
-  }
 
   .banner-texts__header {
     font-size: 32px;
@@ -87,6 +84,10 @@ svg.menu__open {
 
   .menu {
     margin-top: 0;
+    position: fixed;
+    background: white;
+    width: 100%;
+
   }
 
   .calculatorContact__calculator {

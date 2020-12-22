@@ -287,6 +287,8 @@ $gray:#ccd4de;
 
   }
 
+
+
   .culture {
     grid-template-columns: 50% 50%;
   }
@@ -396,6 +398,10 @@ $gray:#ccd4de;
     display: flex;
     margin: 40px 0;
     flex-direction: column;
+  }
+
+  .banner {
+    margin-top: 76px;
   }
 }
 
