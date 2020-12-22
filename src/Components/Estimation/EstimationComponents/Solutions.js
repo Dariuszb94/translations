@@ -9,7 +9,6 @@ import apiKeys from "../../../apikeys";
 const Solutions = ({ numberOfChars, text }) => {
   const [mail, changeMail] = useState("");
   const [readyToSend, changeReadyToSend] = useState(0);
-  const [mailSent, changeMailSent] = useState(0);
   const messageEco = (numberOfChars * 0.3 + 23).toFixed(2);
   const messagePro = (numberOfChars * 0.7 + 40).toFixed(2);
   const messagePremium = (numberOfChars * 0.5 + 32).toFixed(2);
@@ -32,20 +31,19 @@ const Solutions = ({ numberOfChars, text }) => {
         apiKeys.USER_ID
       )
       .then(
-        (result) => {
-          changeMailSent(1);
+        () => {
+          alert("Mail został wysłany");
           e.target.querySelector('input[type="submit"]').style.backgroundColor =
             "green";
           e.target.querySelector('input[type="submit"]').style.boxShadow =
             "box-shadow: 0px 2px 12px green;";
         },
-        (error) => {
+        () => {
           alert("Wystąpił problem podczas wysyłki e-mail");
           e.target.querySelector('input[type="submit"]').style.backgroundColor =
             "red";
           e.target.querySelector('input[type="submit"]').style.boxShadow =
             "box-shadow: 0px 2px 12px red;";
-          changeMailSent(0);
         }
       );
   }
