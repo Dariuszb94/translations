@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/translations/static/css/main.0db4a1bf.chunk.css",
+    "main.css": "/translations/static/css/main.0ca018fa.chunk.css",
     "main.js": "/translations/static/js/main.03194f47.chunk.js",
     "main.js.map": "/translations/static/js/main.03194f47.chunk.js.map",
     "runtime-main.js": "/translations/static/js/runtime-main.35137d21.js",
@@ -8,7 +8,7 @@
     "static/js/2.039f1a0e.chunk.js": "/translations/static/js/2.039f1a0e.chunk.js",
     "static/js/2.039f1a0e.chunk.js.map": "/translations/static/js/2.039f1a0e.chunk.js.map",
     "index.html": "/translations/index.html",
-    "static/css/main.0db4a1bf.chunk.css.map": "/translations/static/css/main.0db4a1bf.chunk.css.map",
+    "static/css/main.0ca018fa.chunk.css.map": "/translations/static/css/main.0ca018fa.chunk.css.map",
     "static/js/2.039f1a0e.chunk.js.LICENSE.txt": "/translations/static/js/2.039f1a0e.chunk.js.LICENSE.txt",
     "static/media/astronave-translated.434bad27.png": "/translations/static/media/astronave-translated.434bad27.png",
     "static/media/banner.6ac17f92.png": "/translations/static/media/banner.6ac17f92.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.35137d21.js",
     "static/js/2.039f1a0e.chunk.js",
-    "static/css/main.0db4a1bf.chunk.css",
+    "static/css/main.0ca018fa.chunk.css",
     "static/js/main.03194f47.chunk.js"
   ]
 }
