@@ -1,6 +1,6 @@
 # Translations app
 
-The App lets you calculate price for translation. Mail with calculation will be send to you.
+The App lets you calculate price for translation. Mail with calculation will be send to you. 
 
 ## Table of contents
 
